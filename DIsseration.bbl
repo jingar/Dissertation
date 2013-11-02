@@ -29,7 +29,12 @@
   \field{labelyear}{2013}
   \field{sortinit}{C}
   \field{booktitle}{The Encyclopedia of Human-Computer Interaction, 2nd Ed}
+  \field{chapter}{15}
   \field{title}{Usability Evaluation}
+  \verb{url}
+  \verb http://www.interaction-design.org/encyclopedia/usability_evaluation.htm
+  \verb l
+  \endverb
   \field{year}{2013}
 \endentry
 
@@ -50,6 +55,31 @@
   \field{title}{Ergonomics of human-system interaction}
 \endentry
 
+\entry{krug2005}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Krug}{K.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {New Riders}%
+  }
+  \strng{namehash}{KS1}
+  \strng{fullhash}{KS1}
+  \field{labelyear}{2005}
+  \field{sortinit}{K}
+  \field{chapter}{Read me first}
+  \field{edition}{Second}
+  \field{pages}{5}
+  \field{title}{Don't Make Me Think! A Common Sense Approach to Web Usability}
+  \list{location}{1}{%
+    {Berkeley, Calif}%
+  }
+  \field{year}{2005}
+\endentry
+
 \entry{nielsens1993}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -65,6 +95,8 @@
   \strng{fullhash}{NJ1}
   \field{labelyear}{1993}
   \field{sortinit}{N}
+  \field{chapter}{What Is Usability?}
+  \field{pages}{26\bibrangedash 37}
   \field{title}{Usability Engineering}
   \list{location}{1}{%
     {Boston}%
