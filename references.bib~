@@ -1,0 +1,7 @@
+@book{nielsens1993,
+    author    = "Jakob Nielsen",
+    title     = "Usability Engineering",
+    year      = "1993",
+    publisher = "Academic Press",
+    address   = "Boston"
+}

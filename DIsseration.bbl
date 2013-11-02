@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{gilbert2013}{inbook}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cockton}{C.}%
+     {Gilbert}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CG1}
+  \strng{fullhash}{CG1}
+  \field{labelyear}{2013}
+  \field{sortinit}{C}
+  \field{booktitle}{The Encyclopedia of Human-Computer Interaction, 2nd Ed}
+  \field{title}{Usability Evaluation}
+  \field{year}{2013}
+\endentry
+
+\entry{ISO9241-11}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {ISO{~}9241-11:1998}{I.-.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ISO, Geneva, Switzerland}%
+  }
+  \strng{namehash}{I1}
+  \strng{fullhash}{I1}
+  \field{sortinit}{I}
+  \field{title}{Ergonomics of human-system interaction}
+\endentry
+
+\entry{nielsens1993}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Nielsen}{N.}%
+     {Jakob}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Academic Press}%
+  }
+  \strng{namehash}{NJ1}
+  \strng{fullhash}{NJ1}
+  \field{labelyear}{1993}
+  \field{sortinit}{N}
+  \field{title}{Usability Engineering}
+  \list{location}{1}{%
+    {Boston}%
+  }
+  \field{year}{1993}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
