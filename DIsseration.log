@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.2)  2 NOV 2013 22:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.2)  3 NOV 2013 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,7 +344,28 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
- [4] [5] [6
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [4] [5]
+Overfull \hbox (26.78864pt too wide) in paragraph at lines 56--56
+[]\OT1/cmr/m/n/10.95 Carol Bar-num. \OT1/cmr/m/it/10.95 Us-abil-ity test-ing an
+d re-search\OT1/cmr/m/n/10.95 . New York: Long-man, 2002. Chap. What
+ []
+
+
+Overfull \hbox (13.89104pt too wide) in paragraph at lines 56--56
+[]\OT1/cmr/m/n/10.95 ISO 9241-11:1998. \OT1/cmr/m/it/10.95 Er-gonomics of human
+-system in-ter-ac-tion\OT1/cmr/m/n/10.95 . ISO, Geneva, Switzer-
+ []
+
+
+Overfull \hbox (5.61282pt too wide) in paragraph at lines 56--56
+[]\OT1/cmr/m/n/10.95 Jakob Nielsen. \OT1/cmr/m/it/10.95 Us-abil-ity En-gi-neer-
+ing\OT1/cmr/m/n/10.95 . Boston: Aca-demic Press, 1993. Chap. What
+ []
+
+[6
 
 ] (./DIsseration.aux)
 Package logreq Info: Writing requests to 'DIsseration.run.xml'.
@@ -352,20 +373,20 @@ Package logreq Info: Writing requests to 'DIsseration.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 5517 strings out of 495031
- 90647 string characters out of 6181531
+ 5520 strings out of 495031
+ 90702 string characters out of 6181531
  249596 words of memory out of 5000000
- 8713 multiletter control sequences out of 15000+600000
+ 8716 multiletter control sequences out of 15000+600000
  9319 words of font info for 33 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,4n,49p,840b,1197s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,4n,49p,840b,1197s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DIsseration.pdf (6 pages, 97584 bytes).
+Output written on DIsseration.pdf (6 pages, 99150 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream

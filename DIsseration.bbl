@@ -16,6 +16,30 @@
   {}
 \endgroup
 
+\entry{barnum2002}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Barnum}{B.}%
+     {Carol}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Longman}%
+  }
+  \strng{namehash}{BC1}
+  \strng{fullhash}{BC1}
+  \field{labelyear}{2002}
+  \field{sortinit}{B}
+  \field{chapter}{What Is Usability?}
+  \field{pages}{9}
+  \field{title}{Usability testing and research}
+  \list{location}{1}{%
+    {New York}%
+  }
+  \field{year}{2002}
+\endentry
+
 \entry{gilbert2013}{inbook}{}
   \name{author}{1}{}{%
     {{}%
@@ -38,7 +62,7 @@
   \field{booktitle}{The Encyclopedia of Human-Computer Interaction, 2nd Ed}
   \field{title}{Usability Evaluation}
   \verb{url}
-  \verb http://www.interaction-design.org/encyclopedia/usability_evaluation.htm
+  \verb http://www.interaction design.org/encyclopedia/usability_evaluation.htm
   \verb l
   \endverb
   \field{year}{2013}
@@ -61,6 +85,35 @@
   \field{title}{Ergonomics of human-system interaction}
 \endentry
 
+\entry{jj1993}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Joseph~S}{J.~S.}%
+     {Dumas}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Redish}{R.}%
+     {Janice}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Ablex Pub. Corp.}%
+  }
+  \strng{namehash}{JSDRJ1}
+  \strng{fullhash}{JSDRJ1}
+  \field{labelyear}{1993}
+  \field{sortinit}{J}
+  \field{chapter}{Introducing Usability Testing}
+  \field{pages}{22}
+  \field{title}{A practical guide to usability testing}
+  \list{location}{1}{%
+    {Norwood, N.J.}%
+  }
+  \field{year}{1993}
+\endentry
+
 \entry{krug2005}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -79,6 +132,9 @@
   \field{chapter}{Read me first}
   \field{pages}{5}
   \field{title}{Don't Make Me Think! A Common Sense Approach to Web Usability}
+  \list{location}{1}{%
+    {Berkeley, Calif}%
+  }
   \field{year}{2005}
 \endentry
 
@@ -100,6 +156,9 @@
   \field{chapter}{What Is Usability?}
   \field{pages}{26\bibrangedash 37}
   \field{title}{Usability Engineering}
+  \list{location}{1}{%
+    {Boston}%
+  }
   \field{year}{1993}
 \endentry
 
@@ -126,6 +185,9 @@
   \field{chapter}{What is Usability Testing?}
   \field{pages}{21}
   \field{title}{How to Plan, Design, and Conduct Effective Tests}
+  \list{location}{1}{%
+    {Indianapolis, IN}%
+  }
   \field{year}{2008}
 \endentry
 
