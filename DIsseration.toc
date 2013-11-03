@@ -6,4 +6,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}The origin of usability}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}What is Usability?}{3}
+\contentsline {section}{\numberline {2.2}Usability}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Usability Testing}{5}
