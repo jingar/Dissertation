@@ -191,6 +191,30 @@
   \field{year}{2008}
 \endentry
 
+\entry{kobsaseid2003}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Yaiman-Seid}{Y.-S.}%
+     {Dawit}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kobsa}{K.}%
+     {Alfred}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{YSDKA1}
+  \strng{fullhash}{YSDKA1}
+  \field{labelyear}{2003}
+  \field{sortinit}{Y}
+  \field{title}{Expert-Finding Systems for Organizations: Problem and Domain
+  Analysis and the DEMOIR Approach}
+  \field{journaltitle}{Journal of Organizational Computing and Electronic
+  Commerce}
+  \field{year}{2003}
+\endentry
+
 \lossort
 \endlossort
 

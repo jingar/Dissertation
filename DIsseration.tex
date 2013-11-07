@@ -1,4 +1,7 @@
 \documentclass[a4paper,oneside,11pt]{report}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
 \usepackage[margin=1in]{geometry}
 \usepackage[doublespacing]{setspace}
 \usepackage[citestyle=authoryear]{biblatex}
@@ -6,14 +9,46 @@
 \begin{document}
 \tableofcontents
 
+\abstract{test}
+
 \chapter{Aims and Objectives}
 \chapter{Literature Review}
-\section{The origin of usability}
-Before the 1980s almost all users of computers were highly technical, with much experience and understanding of computing. Beginning in the 1960s a move towards less technical users began with the introduction time sharing and minicomputers. Which was further supplemented In the 1980s due to falling prices of computers as it become possible for many everyday people to become computer users. While falling prices continued, software practices remained the same with implicit assumptions of user experience and knowledge. This lead to frustrated users who lacked the knowledge of computing and become to associate computing with frustrations. From this usability become an important design goal for any system that was to be used by untrained, non technical users.\autocite{gilbert2013}
+\section{collaboration}
+\section{Artist and Scientist Collaboration}
+The contribution that artists can make to research and development is that they often
+approach problems in ways quite different from those of scientists and engineers, as
+demonstrated by the crucial role played by designers and artists in computer human
+interface research over the last years. The arts can function as an independent zone of
+research. The concept of artist could incorporate other roles, such as that of researcher,inventor, hacker, and entrepreneur. Even within research labs, artist participation in
+research teams might add a perspective that could drive the research process and continue
+to contribute at all stages. Artists might very well value research according to criteria quite different from those of the commercial and scientiﬁc worlds. They might see aspects of the problems missed by the other researchers. The arts could become a place where abandoned, discredited,
+and unorthodox inquires could be pursued.
+\section{Origin Expert locator}
+Many organisations have identified the need to locate knowledgeable individuals within there organisations. This is in order to catalogue skills and expertise of individuals in way that it can later be queried.(The role of artificial intelligence technologies in the implementation of People-Finder knowledge management systems).
+It is important for organisations to effectively use there knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals(Sharing Expertise: Beyond Knowledge Management).
+
+Examples of organisations developing expert finding systems: \\
+Hewlett Packard (HP), a company in the computers and electronic equipment market developed  an Expert-Finder. The goal of the project was to build a network of experts which consisted of a database user profiles. The user profiles gave a summary of the users knowledge and skill. 
+
+The National Security Agency (NSA) has also attempted to build a system to locate experts with in the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills with in the organisation. 
+(The role of artificial intelligence technologies in the implementation of People-Finder knowledge management systems).
+
+\section{Expert Locator}
+\subsection{Why do people what to seek experts?}
+Yimam-Seid and Kobsa(\citeyear{kobsaseid2003}) offer a few reasons as to why individuals may seek experts They state there are two major reasons why individuals seek experts. (a) They need information specific information from the expert and (b) They need the expert who can perform some function. The people seeking experts for the first reasons usually looking to replace or complement other sources of information such as documents. Some scenarios for this reason include using seeking information that is not documented, using experts to minimize ones own effort or individuals may prefer interacting with humans rather than documents or computers. 
+
+People seeking experts for the second reasons need experts for a continued period of time where the expert will be work for them or with them. Usually the search for this type of reason is performed more carefully than for obtaining information from experts.
+
+
+
+\section{Origins of Usability}
+Historically the design of machines mainly focused on the users physical interactions i.e muscular capabilities and physical limitations of the user. During Word War \rom{2} due to the introduction of new technology such as the radar, this shifted the emphasis from the physical interactions of the user to the mental aspect of the user during interaction.(Badre,2002). \\
+In the 1960 an innovative concept was developed by Licklider, the concept of human computer symbiosis. He theorized a relationship between the user and a computer, that the two were distinct but interdependent systems. The human element brings creativity and decision making while the computer system element brings rapid calculations, storing and retrieving data etc. Thus the human and the computer system supplement each other in order to each a goal, forming a symbiotic relationship.It would not be until much later that computer systems became powerful enough for this concept to become feasible.(Badre,2002).
+Before the 1980s almost all users of computers were highly technical, with much experience and understanding of computing. In the 1980s due to falling prices of computers as it become possible for many everyday people to become computer users. While falling prices continued, software practices remained the same with implicit assumptions of user experience and knowledge. This lead to frustrated users who lacked the knowledge of computing and become to associate computing with frustrations. From this usability become an important design goal for any system that was to be used by untrained, non technical users.\autocite{gilbert2013}
 
 \section{Usability}
-After an examination of various definitions of usability , it reveals a commonality among definitions. 
-For instance one of the most used definitions of usability is by Nilesen(\citeyear{nielsens1993}) , defines usability in terms of five attributes Learn-ability, Efficiency. Memorability, Errors and Satisfaction.
+After an examination of various definitions of usability , there reveals is a commonality among definitions. 
+For instance one of the most used definitions of usability is by Nilesen(\citeyear{nielsens1993}) , he defines usability in terms of five attributes Learn-ability, Efficiency. Memorability, Errors and Satisfaction. Nielsen further goes on to describe the the five attributes as:
 \begin{description}
   \item[Learn-ability] How easy a system is to learn for a novice. Generally the first experience a user has of a system is that of learning therefore it is best that this period is kept to a minimum so that the user can be productive as soon as possible.
   \item[Efficiency] How productive a user is once the user has learned how to use the system. There is no point in having a system that once learned provides no benefits to productivity.
@@ -35,7 +70,7 @@ The terms used are further defined as follows:
 
 Furthermore another, simpler definition of usability has been offered by Krug (\citeyear{krug2005}), which defines usability as \enquote {making sure that something works well: that a person of average (or even below average) ability and experience can use the 
 thing—whether it’s a Web site, a fighter jet, or a revolving door—for its intended purpose without getting hopelessly frustrated.}
- From these definitions the major theme that can be drawn out is, usability is concerned with the level of success,satisfaction the user has when interacting with a product. For this study we will be focusing on the ISO 9241-11 definition out of the three presented. It is the most detailed and widely used among literature. Furthermore this definition is used by the Common Industry Format for Usability Test reports which for further adds to its credibility. 
+ From these definitions the major theme that can be drawn out is, usability is concerned with the level of success,satisfaction the user has when interacting with a product. For this study we will be focusing on the ISO 9241-11 definition out of the three presented.
  From a usability definition one can one can not further go onto define usability testing.
 \section{Usability Testing}
 Like usability, usability testing as well has numerous definitions. Rubin
@@ -51,6 +86,8 @@ Like usability, usability testing as well has numerous definitions. Rubin
 \endquote
 The literature indicates that usability testing involves the notion of observing and collecting data on when the user interacts with the product. Each test must have some goal or some criteria to test against, without there is no way to know when you change the product if if there was an increase in some aspect of usability.
 For the purposes of this study , usability testing will defined as the observance of authentic users carrying out authentic tasks in relation to the collaboration website in order to determine the effectiveness of solutions proposed.
+
+
 
 \printbibliography
 \end{document}
