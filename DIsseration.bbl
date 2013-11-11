@@ -40,32 +40,32 @@
   \field{year}{2002}
 \endentry
 
-\entry{gilbert2013}{inbook}{}
+\entry{fernandez2000}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Cockton}{C.}%
-     {Gilbert}{G.}%
+     {Becerra-Fernandez}{B.-F.}%
+     {I}{I}%
      {}{}%
      {}{}}%
   }
-  \name{bookauthor}{1}{}{%
-    {{}%
-     {Mads~Soegaard}{M.~S.}%
-     {Rikke Friis~Dam}{R.~F.~D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CG1}
-  \strng{fullhash}{CG1}
-  \field{labelyear}{2013}
-  \field{sortinit}{C}
-  \field{booktitle}{The Encyclopedia of Human-Computer Interaction, 2nd Ed}
-  \field{title}{Usability Evaluation}
-  \verb{url}
-  \verb http://www.interaction design.org/encyclopedia/usability_evaluation.htm
-  \verb l
+  \strng{namehash}{BFI1}
+  \strng{fullhash}{BFI1}
+  \field{labelyear}{2000}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/S0950-7051(00)00091-5
   \endverb
-  \field{year}{2013}
+  \field{issn}{0950-7051}
+  \field{number}{5}
+  \field{pages}{315 \bibrangedash  320}
+  \field{title}{The role of artificial intelligence technologies in the
+  implementation of People-Finder knowledge management systems}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0950705100000915
+  \endverb
+  \field{volume}{13}
+  \field{journaltitle}{Knowledge-Based Systems}
+  \field{year}{2000}
 \endentry
 
 \entry{ISO9241-11}{book}{}
@@ -138,7 +138,7 @@
   \field{year}{2005}
 \endentry
 
-\entry{test}{proceedings}{}
+\entry{mcdonalackerman1998}{proceedings}{}
   \name{author}{2}{}{%
     {{}%
      {McDonald}{M.}%
@@ -177,7 +177,6 @@
     {Seattle, Washington, USA}%
   }
   \field{year}{1998}
-  \warn{\item Can't use 'location' + 'address'}
 \endentry
 
 \entry{nielsens1993}{book}{}

@@ -24,32 +24,54 @@ research teams might add a perspective that could drive the research process and
 to contribute at all stages. Artists might very well value research according to criteria quite different from those of the commercial and scientiﬁc worlds. They might see aspects of the problems missed by the other researchers. The arts could become a place where abandoned, discredited,
 and unorthodox inquires could be pursued.
 \section{Origin Expert locator}
-Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use there knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals(Sharing Expertise: Beyond Knowledge Management). Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried.(The role of artificial intelligence technologies in the implementation of People-Finder knowledge management systems). 
+Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use there knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals(Sharing Expertise: Beyond Knowledge Management). Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried(The role of artificial intelligence technologies in the implementation of People-Finder knowledge management systems). 
 
 
 Examples of organisations developing expert finding systems: \\
-Hewlett Packard (HP), a company in the computers and electronic equipment market developed  an Expert-Finder. The goal of the project was to build a network of experts which consisted of a database user profiles. The user profiles gave a summary of the users knowledge and skill. 
+Hewlett Packard (HP), a company in the computers and electronic equipment market developed  an Expert-Finder. The goal of the project was to build a network of experts which consisted of a database user profiles. The user profiles gave a summary of the users knowledge and skill\autocite{fernandez2000}.
+ 
+The National Security Agency (NSA) has also attempted to build a system to locate experts with in the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills with in the organisation\autocite{fernandez2000}.
 
-The National Security Agency (NSA) has also attempted to build a system to locate experts with in the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills with in the organisation. 
-(The role of artificial intelligence technologies in the implementation of People-Finder knowledge management systems).
 
 With some of the biggest organisations investing resources into building expertise locator system, this in itself shows the need for such systems and their importance for further research. 
 
 \section{Expert Locator}
-\subsection{Why do people what to seek experts?}
+Before looking at expert locator systems directly we must first look at why may they be used.
+\subsection{Why do people want to seek experts?}
 Yimam-Seid and Kobsa(\citeyear{kobsaseid2003}) offer a few reasons as to why individuals may seek experts They state there are two major reasons why individuals seek experts. (a) They need specific information from the expert and (b) They need the expert who to perform some function. The people seeking experts for the first reasons are usually looking to replace or complement other sources of information such as documents. Some scenarios for this reason include seeking information that is not documented, using experts to minimize ones own effort or individuals may prefer interacting with humans rather than documents or computers. 
 
 People seeking experts for the second reasons need experts for a continued period of time where the expert will be working for them or with them. Usually the search for this type of reason is performed more carefully than for obtaining information from experts.
 
+\subsection{Why people do not want to seek experts?}
+Allen noted some reasons as to why information seekers may not want to use their colleagues as a source of information but rather would rather use other information channels. In his study of 19 engineers, he found a higher correlation between frequency of use accessibility than quality of the source of information. He further found that information seekers, found the transaction of information seeking as a costly one. The the cost was perceived in the chance of a response that maybe "ego threatening", a loss in status and seeming incompetent. For these reasons engineers would first look at documentation as a source of information. Thus in order to facilitate information seeking, one should decrease the status implication.
 
-\
+\subsection{Stages of finding Expertise}
+\citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) identify three stages in finding expertise with in an organisation, Expertise Identification, Expertise Selection and Escalation.  
+\subsubsection{Expertise Identification} 
+Expert identification is defined as \enquote {the problem of knowing what information or special skills other individuals have.} It is further noted that expertise identification is difficult problem to solve.It contains many varying factors such as what is expertise , how will it be used within the given context and the problem of handling the change of individuals skills and expertise as time goes on. One solution to such expertise identification is to \enquote {consider the types of historical artifacts that are employed by local users as resources and then incorporate use of those within the system.}\autocite{mcdonalackerman1998}
+\subsubsection{Expertise Selection} 
+After determining who has what expertise it is intuitive to then select the most appropriate individual(s) that will solve the problem. \citeauthor{mcdonalackerman1998} (\citeyear{mcdonalackerman1998}) define expertise selection as \enquote {appropriately choosing among people with the required expertise.} Furthermore they observed that expert seekers usually used three expertise selection criteria, \enquote {organizational criteria, load on the source and performance.} Expert seekers tried to find experts that were local and when that failed they went to different departments within the organisations. Expert seekers, further more took into account how busy experts were, approaching the least busy first. Finally they firstly approached experts that were better at explaining solutions or had better \enquote {attitudes}.
+\subsubsection{Expertise Escalation} 
+Escalation is the way in which people resolve the failure of the expertise identification or selection mechanism. The expertise seeker may try to identify other experts or pursue other experts that maybe able to solve the problem.  This does not necessary involve asking members higher up in the organisation hierarchy, it may involve asking help from less desirable experts or even searching for experts in a different department within the organisation\autocite{mcdonalackerman1998}.
+
+\subsubsection{Traditional Approach}
+Allen presented a highly connected organisational role , which served to bring relevant information to informations seekers. Other researchers have have found similar roles with in different types of organisations. Ehrlich and Cash found a what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998} (\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person who is looking for expertise , they ask the expertise concierge about people who maybe be able to help then the concierge tells the person about possible individuals that may be able to help. 
+
+One way in which we can emulate such roles and automate them is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. However such a system does limitations.
+\begin{enumerate}
+	\item Developing the databases is a labour intensive and expensive.
+	\item For the such a system to work , it relies on the experts willingness to spend time 		  			  initially providing information about their expertise.
+	\item Due to a continuous change in peoples expertise it is hard to keep the databases up to 				  date.
+	\item There is usually a disconnect between expertise description entered into the database and 	          the expert related query. The expertise description are usually general and incomplete                                                                            		  while the expert related queries are very specific. 
+\end{enumerate}\autocite{kobsaseid2003}
+
 
 \section{Origins of Usability}
 Historically the design of machines mainly focused on the users physical interactions i.e muscular capabilities and physical limitations of the user. During Word War \rom{2} due to the introduction of new technology such as the radar, this shifted the emphasis from the physical interactions of the user to the mental aspect of the user during interaction.(Badre,2002). \\
 In the 1960 an innovative concept was developed by Licklider, the concept of human computer symbiosis. He theorized a relationship between the user and a computer, that the two were distinct but interdependent systems. The human element brings creativity and decision making while the computer system element brings rapid calculations, storing and retrieving data etc. Thus the human and the computer system supplement each other in order to each a goal, forming a symbiotic relationship.It would not be until much later that computer systems became powerful enough for this concept to become feasible.(Badre,2002).
-Before the 1980s almost all users of computers were highly technical, with much experience and understanding of computing. In the 1980s due to falling prices of computers as it become possible for many everyday people to become computer users. While falling prices continued, software practices remained the same with implicit assumptions of user experience and knowledge. This lead to frustrated users who lacked the knowledge of computing and become to associate computing with frustrations. From this usability become an important design goal for any system that was to be used by untrained, non technical users.\autocite{gilbert2013}
+Before the 1980s almost all users of computers were highly technical, with much experience and understanding of computing. In the 1980s due to falling prices of computers as it become possible for many everyday people to become computer users. While falling prices continued, software practices remained the same with implicit assumptions of user experience and knowledge. This lead to frustrated users who lacked the knowledge of computing and become to associate computing with frustrations. From this usability become an important design goal for any system that was to be used by untrained, non technical users.
 
-\section{Usability}(\citeyear{test}) 
+\section{Usability}
 After an examination of various definitions of usability , there reveals is a commonality among definitions. 
 For instance one of the most used definitions of usability is by Nilesen(\citeyear{nielsens1993}) , he defines usability in terms of five attributes Learn-ability, Efficiency. Memorability, Errors and Satisfaction. Nielsen further goes on to describe the the five attributes as:
 \begin{description}

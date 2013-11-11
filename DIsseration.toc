@@ -12,10 +12,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Expert Locator}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Why do people what to seek experts?}{4}
+\contentsline {subsection}{\numberline {2.4.1}Why do people want to seek experts?}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Origins of Usability}{5}
+\contentsline {subsection}{\numberline {2.4.2}Why people do not want to seek experts?}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Usability}{5}
+\contentsline {subsection}{\numberline {2.4.3}Stages of finding Expertise}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Usability Testing}{7}
+\contentsline {subsubsection}{Expertise Identification}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Expertise Selection}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Expertise Escalation}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Traditional Approach}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Origins of Usability}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Usability}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Usability Testing}{9}
