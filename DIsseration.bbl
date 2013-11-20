@@ -16,6 +16,35 @@
   {}
 \endgroup
 
+\entry{ackerman2003sharing}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Ackerman}{A.}%
+     {Mark~S}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pipek}{P.}%
+     {Volkmar}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wulf}{W.}%
+     {Volker}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT press}%
+  }
+  \strng{namehash}{AMSPVWV1}
+  \strng{fullhash}{AMSPVWV1}
+  \field{labelyear}{2003}
+  \field{sortinit}{A}
+  \field{title}{Sharing expertise: Beyond knowledge management}
+  \field{year}{2003}
+\endentry
+
 \entry{allen1977}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -114,6 +143,31 @@
   \field{year}{2003}
 \endentry
 
+\entry{ehrlichcash1994}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ehrlich}{E.}%
+     {Kate}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cash}{C.}%
+     {Debra}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EKCD1}
+  \strng{fullhash}{EKCD1}
+  \field{labelyear}{1994}
+  \field{sortinit}{E}
+  \field{booktitle}{Proceedings of digital libraries}
+  \field{pages}{119\bibrangedash 125}
+  \field{title}{Turning information into knowledge: Information finding as a
+  collaborative activity}
+  \field{volume}{94}
+  \field{year}{1994}
+\endentry
+
 \entry{mcdonalackerman1998}{proceedings}{}
   \name{author}{2}{}{%
     {{}%
@@ -149,6 +203,7 @@
   \verb{url}
   \verb http://doi.acm.org/10.1145/289444.289506
   \endverb
+  \field{venue}{New York, NY, USA}
   \list{location}{1}{%
     {Seattle, Washington, USA}%
   }
