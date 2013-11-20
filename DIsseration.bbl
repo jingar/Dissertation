@@ -16,40 +16,36 @@
   {}
 \endgroup
 
-\entry{barnum2002}{book}{}
+\entry{allen1977}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Barnum}{B.}%
-     {Carol}{C.}%
+     {Allen}{A.}%
+     {Thomas~J}{T.~J.}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {Longman}%
-  }
-  \strng{namehash}{BC1}
-  \strng{fullhash}{BC1}
-  \field{labelyear}{2002}
-  \field{sortinit}{B}
-  \field{chapter}{What Is Usability?}
-  \field{pages}{9}
-  \field{title}{Usability testing and research}
-  \list{location}{1}{%
-    {New York}%
-  }
-  \field{year}{2002}
+  \strng{namehash}{ATJ1}
+  \strng{fullhash}{ATJ1}
+  \field{labelyear}{1977}
+  \field{sortinit}{A}
+  \field{title}{Managing the flow of technology: Technology transfer and the
+  dissemination of technological information within the R \& D
+  organization(Book)}
+  \field{journaltitle}{Research supported by the National Science Foundation.
+  Cambridge, Mass., MIT Press, 1977. 329 p}
+  \field{year}{1977}
 \endentry
 
 \entry{fernandez2000}{article}{}
   \name{author}{1}{}{%
     {{}%
      {Becerra-Fernandez}{B.-F.}%
-     {I}{I}%
+     {}{}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{BFI1}
-  \strng{fullhash}{BFI1}
+  \strng{namehash}{BF1}
+  \strng{fullhash}{BF1}
   \field{labelyear}{2000}
   \field{sortinit}{B}
   \verb{doi}
@@ -68,74 +64,54 @@
   \field{year}{2000}
 \endentry
 
-\entry{ISO9241-11}{book}{}
-  \name{author}{1}{}{%
+\entry{campbell2003}{inproceedings}{}
+  \name{author}{4}{}{%
     {{}%
-     {ISO{~}9241-11:1998}{I.-.}%
+     {Campbell}{C.}%
+     {Christopher~S.}{C.~S.}%
      {}{}%
+     {}{}}%
+    {{}%
+     {Maglio}{M.}%
+     {Paul~P.}{P.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cozzi}{C.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dom}{D.}%
+     {Byron}{B.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
-    {ISO, Geneva, Switzerland}%
+    {ACM}%
   }
-  \strng{namehash}{I1}
-  \strng{fullhash}{I1}
-  \field{sortinit}{I}
-  \field{title}{Ergonomics of human-system interaction}
-\endentry
-
-\entry{jj1993}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Joseph~S}{J.~S.}%
-     {Dumas}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Redish}{R.}%
-     {Janice}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Ablex Pub. Corp.}%
-  }
-  \strng{namehash}{JSDRJ1}
-  \strng{fullhash}{JSDRJ1}
-  \field{labelyear}{1993}
-  \field{sortinit}{J}
-  \field{chapter}{Introducing Usability Testing}
-  \field{pages}{22}
-  \field{title}{A practical guide to usability testing}
+  \keyw{expertise identification, knowledge management}
+  \strng{namehash}{CCS+1}
+  \strng{fullhash}{CCSMPPCADB1}
+  \field{labelyear}{2003}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the Twelfth International Conference on
+  Information and Knowledge Management}
+  \verb{doi}
+  \verb 10.1145/956863.956965
+  \endverb
+  \field{isbn}{1-58113-723-0}
+  \field{pages}{528\bibrangedash 531}
+  \field{series}{CIKM '03}
+  \field{title}{Expertise Identification Using Email Communications}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/956863.956965
+  \endverb
+  \field{venue}{New York, NY, USA}
   \list{location}{1}{%
-    {Norwood, N.J.}%
+    {New Orleans, LA, USA}%
   }
-  \field{year}{1993}
-\endentry
-
-\entry{krug2005}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Krug}{K.}%
-     {Steve}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {New Riders}%
-  }
-  \strng{namehash}{KS1}
-  \strng{fullhash}{KS1}
-  \field{labelyear}{2005}
-  \field{sortinit}{K}
-  \field{chapter}{Read me first}
-  \field{pages}{5}
-  \field{title}{Don't Make Me Think! A Common Sense Approach to Web Usability}
-  \list{location}{1}{%
-    {Berkeley, Calif}%
-  }
-  \field{year}{2005}
+  \field{year}{2003}
 \endentry
 
 \entry{mcdonalackerman1998}{proceedings}{}
@@ -177,59 +153,6 @@
     {Seattle, Washington, USA}%
   }
   \field{year}{1998}
-\endentry
-
-\entry{nielsens1993}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Nielsen}{N.}%
-     {Jakob}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Academic Press}%
-  }
-  \strng{namehash}{NJ1}
-  \strng{fullhash}{NJ1}
-  \field{labelyear}{1993}
-  \field{sortinit}{N}
-  \field{chapter}{What Is Usability?}
-  \field{pages}{26\bibrangedash 37}
-  \field{title}{Usability Engineering}
-  \list{location}{1}{%
-    {Boston}%
-  }
-  \field{year}{1993}
-\endentry
-
-\entry{rubinchinsel2008}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Rubin}{R.}%
-     {Jeffrey}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chisnell}{C.}%
-     {Dana}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Wiley, John \& Sons, Incorporated}%
-  }
-  \strng{namehash}{RJCD1}
-  \strng{fullhash}{RJCD1}
-  \field{labelyear}{2008}
-  \field{sortinit}{R}
-  \field{chapter}{What is Usability Testing?}
-  \field{pages}{21}
-  \field{title}{How to Plan, Design, and Conduct Effective Tests}
-  \list{location}{1}{%
-    {Indianapolis, IN}%
-  }
-  \field{year}{2008}
 \endentry
 
 \entry{kobsaseid2003}{article}{}
