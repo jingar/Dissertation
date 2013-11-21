@@ -4,11 +4,12 @@
 \makeatother
 \usepackage[margin=1in]{geometry}
 \usepackage[doublespacing]{setspace}
-\usepackage[citestyle=authoryear]{biblatex}
+\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+\usepackage{graphicx}
 \addbibresource{references.bib}
 \begin{document}
 \title{Ascus - Collaboration Finder}
-\author{Saad Arif\\Fourth Year Dissertation - First Deliverable \\ \em Supervisor: Ruth Aylett \\ \em Second Reader: Patricia Vargas}
+\author{Saad Arif\\Fourth Year Dissertation - First Deliverable \\ \emph{Supervisor}: Ruth Aylett \\ \em \emph{Second Reader}: Patricia Vargas}
 \maketitle
 \pagestyle{empty} %get rid of header/footer for toc page
 \tableofcontents %put toc in
@@ -132,15 +133,6 @@ This feature will allow members to create projects, that users can search for. T
 \subsection{Low Priority}
 \subsubsection{Forum}
 User will have the standard forum functionality available . Users will be able to create threads and post comments. 
-\chapter{Methodology}
-Due the user centric nature of the of project, it is best to use iterative development and avoid the traditional waterfall methodology. The waterfall methodology is not suited for this project as it does not involve users as much as required for high user interaction projects. 
-
-Using iterative development, this project will focus on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype will be continually improved as more feedback is obtained.
-
-By using iterative development , the unpredictable nature of working users can be managed. Due to continually prototyping and implementation small parts, the user will still have some functionality even if the project cannot be finished. If the waterfall methodology was used and significant difficulties were encountered, it is likely the project would not finish and have no functionality implemented at all. 
-
-Any issues regarding requirements or user interface design can be solved early on in the development process. Using the waterfall method it would too late to go back and make changes to the design, if there were any misunderstandings in the requirements.
-In conclusion many of the problems in encountered when developing interactive software can be dealt with using iterative development. 
 
 \chapter{Technology Analysis}
 \section{Database}
@@ -198,8 +190,48 @@ Users find the system unusable & Moderate & High & Follow user centred design ap
     \caption{Risk Assessment}
 \label{tab:xyz}
     \end{table}
-    \clearpage
     \end{center}
+\chapter{Methodology}
+Due the user centric nature of the of project, it is best to use iterative development and avoid the traditional waterfall methodology. The waterfall methodology is not suited for this project as it does not involve users as much as required for high user interaction projects. 
+
+Using iterative development, this project will focus on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype will be continually improved as more feedback is obtained.
+
+By using iterative development , the unpredictable nature of working users can be managed. Due to continually prototyping and implementation small parts, the user will still have some functionality even if the project cannot be finished. If the waterfall methodology was used and significant difficulties were encountered, it is likely the project would not finish and have no functionality implemented at all. 
+
+Any issues regarding requirements or user interface design can be solved early on in the development process. Using the waterfall method it would too late to go back and make changes to the design, if there were any misunderstandings in the requirements.
+In conclusion many of the problems in encountered when developing interactive software can be dealt with using iterative development. 
+
+\chapter{Initial Design and Implementation}
+\section{Initial User Interface Design}
+This section will give an overview of the user interface prototypes created so far. There purpose is to get initial feedback on the interface of the main requirements.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/search.jpg}
+\caption{Caption of the figure}
+\end{figure}
+This interface design is for allowing users to search for collaborators. The search bars allow the users to search by occupation, location and radius of the location.
+Once the search is complete, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and the first few words of their biography are shown. The far right hand side shows popular areas in which members have claimed they have expertise in
+\\
+\\
+The second figure shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
+\caption{Caption of the figure}
+\end{figure}
+The profile contains useful information that users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
+
+On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the user the is appropriate for collaboration.
+\newpage
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
+\caption{Caption of the figure}
+\end{figure}
+
 \chapter{Initial Testing Strategy and Evaluation}
 This chapter describes the plan for testing and evaluating the system.
 \section{System Evaluation}
@@ -210,7 +242,8 @@ In order to evaluate the system, prototypes will be used. The system evaluation 
 In order to gain even more feedback a semi structured interview will be used. It will be decided in advance which themes and areas are needed to be explored during the interview. Using a semi structured interview allows for more freedom to discuss various areas and explore areas based on the users answers. The interviews will be recorded, as writing the users answers will likely not capture exactly what the user said. It also frees the interviewer to focus on the users answers rather than with writing them down.
 
 Before any questionnaire and interviews are conducted the user will be given an consent form detailing what will the questionnaire/interview involve, all information gathered will be anonymised, the user can withdraw their participation as they see fit and any recordings will only be kept as long as necessary for the project.
-\section{System Testing}
+\section{System Testing Strategy}
+
 
 \chapter{Project Plan}
 A high level plan below describes the key tasks to be achieved.
