@@ -84,7 +84,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Initial Database Design}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Initial Testing Strategy and Evaluation}{18}
+\contentsline {chapter}{\numberline {8}Initial Evaluation and Testing Strategy}{18}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}System Evaluation}{18}
 \defcounter {refsection}{0}\relax 

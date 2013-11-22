@@ -235,7 +235,11 @@ In order for the database design to reflect the requirements, it is important to
 \caption{Initial ER-Diagram}
 \end{figure}
 The relationship between an member and his/her profile is a one-to-one. Each member must have a profile and vice-versa.
-\chapter{Initial Testing Strategy and Evaluation}
+
+Every member has many expertise and many expertise can be shared by many members. Thus we have a many-to-many relationship between member and expertise areas. However the member table is used to keep log in information thus the expertise table has a relationship with the profile, since the profile is used to display the profile in web application.
+
+In order for the many-to-many relationship to be implemented it must require an intermediate table. The profile/expertise table will act as link between the profile and expertise table. It will use an composite primary key consisting of the primary key from the profile table and the primary key from the expertise table.
+\chapter{Initial Evaluation and Testing Strategy}
 This chapter describes the plan for testing and evaluating the system.
 \section{System Evaluation}
 In order to meet the high usability requirement, it is important to involve users when developing the system and user interface. If the system is not usable then the users will not use the system, rendering the project pointless.
@@ -246,6 +250,12 @@ In order to gain even more feedback a semi structured interview will be used. It
 
 Before any questionnaire and interviews are conducted the user will be given an consent form detailing what will the questionnaire/interview involve, all information gathered will be anonymised, the user can withdraw their participation as they see fit and any recordings will only be kept as long as necessary for the project.
 \section{System Testing Strategy}
+In order to sufficiently test the system , the testing strategy will be split into two parts, testing during development and testing after development.
+Rather than testing being a separate phase in development, it will be integrate into the development cycle. After each feature and or the smallest independent part is completed, tests will be written for said part. The tests will be unit tests and will be written using the PHPUnit test framework. 
+
+Using the automated test framework , this allows us to carry out integration testing as well. As development progress, tests can be run after the integration of different parts of the application. If the integration causes any unforeseen, bugs the automatic testing should signal a problem. This way the bugs can be caught early on when integrating and thus in theory the system should be bug free throughout the development.
+
+Due to the unpredictable nature of users , it is impossible to foresee all potential problems with the system and test for them. Thus it is important to carry out testing involving the users before releasing  the final system. After all features that are to be implemented have been finished the beta testing will begin. The system will be released to a subset of the users and the users will be given an email address to which they can send there issues. Sample data will be added in order to typical use of some features e.g. sample profiles will be added so the searching functionality can be used. It is likely that this testing will happen for a short and fixed amount of time due to the static deadlines.
 \chapter{Project Plan}
 A high level plan below describes the key tasks to be achieved.
 \begin{center}
