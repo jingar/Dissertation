@@ -68,16 +68,16 @@ Expert identification is defined as \enquote {the problem of knowing what inform
 After determining who has what expertise it is intuitive to then select the most appropriate individual(s) that will solve the problem. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) define expertise selection as \enquote {appropriately choosing among people with the required expertise.} Furthermore they observed that expert seekers usually used three expertise selection criteria, \enquote {organizational criteria, load on the source and performance.} Expert seekers tried to find experts that were local and when that failed they went to different departments within the organisations. Expert seekers, further more took into account how busy experts were, approaching the least busy first. Finally they firstly approached experts that were better at explaining solutions or had better \enquote {attitudes}.
 
 \subsubsection{Expertise Escalation} 
-Escalation is the process by which people resolve the failure of the expertise identification or selection mechanism. The expertise seeker may try to identify other experts or pursue other experts that maybe able to solve the problem.  This does not necessary involve asking members higher up in the organisation hierarchy, it may involve asking help from less desirable experts or even searching for experts in a different department within the organisation\autocite{mcdonalackerman1998}.
+Escalation is the process by which people resolve the failure of the expertise identification or selection mechanism. The expertise seeker may try to identify other experts or pursue other experts that maybe able to solve the problem.  This does may involve asking members higher up in the organisation hierarchy, asking help from less desirable experts or even searching for experts in a different department within the organisation\autocite{mcdonalackerman1998}.
 \\
 \\
-The system being built should emulate the first two stages and try to avoid the third stage as much as possible. The system ,with regards to expertise identification, should try to match with as much accuracy as possible if a person is an expert in a particular area. In the second stage the system should order the found candidates in an ranked list with the top candidate the most useful to expert seeker. The ideal solution would be to never reach the expertise escalation stage at all but their is no known system that is 100\% accurate in expertise identification and selection. Furthermore it is unclear from the literature as to how a system can help the user in the expertise escalation stage.
+The system being built should emulate the first two stages and try to avoid the third stage as much as possible. When the system carries out expertise identification, it should aim to asses if individual is an expert in a particular area with as much accuracy as possible. In the second stage the system should order the found candidates in an ranked list with the top candidate being the most useful to expert seeker. The ideal solution would be to never reach the expertise escalation stage at all but their is no known system that is 100\% accurate in expertise identification and selection. Furthermore it is unclear from the literature as to how a system can help the user in the expertise escalation stage.
 
 \subsection{Traditional Approach}
 Many organisations contain roles which act as expertise or information locators.
-In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation , which served to bring relevant information to informations seekers. Other researchers have have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found a what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person who is looking for expertise , they ask the expertise concierge about people who maybe be able to help then the concierge will use their knowledge to suggest individuals that match the query.
+In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation, which served to bring relevant information to informations seekers. Other researchers have have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person was looking for expertise, they would ask the expertise concierge about people who maybe be able to help them. The concierge will use their knowledge to suggest individuals that match the query.
 
-One way in which we can emulate and automate such roles is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. The expert database will return a set of individuals that may be of help. Furthermore the expert database  may return the individuals in a ranked list such that higher up the list individuals are, more likely they are to be of help. However such a system do have limitations\autocite{kobsaseid2003}.
+One way in which the previously stated roles can be emulated and automated is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. The expert database will return a set of individuals that may be of help. Furthermore the expert database may return the individuals in a ranked list. Individuals higher up the list will be more likely to be of help. However such a system do have limitations\autocite{kobsaseid2003}.
 \begin{enumerate}
 	\item Developing the databases is a labour intensive and expensive.
 	\item For the such a system to work , it relies on the experts willingness to spend time 		  			  initially providing information about their expertise.
@@ -86,10 +86,10 @@ One way in which we can emulate and automate such roles is by building an expert
 \end{enumerate}
 
 \subsection{Contemporary Approach}
-In order to combat the limitations of the traditional approach the expert finding process is further automated. This is done by automatically obtaining information on experts from many different sources and not relying solely on human sources\autocite{kobsaseid2003}. Using this method the experts do not need to update their profile manually and thus it is always up to date. 
+In order to combat the limitations of the traditional approach the expert finding process can be further automated. This is done by automatically obtaining information on experts from many different sources and not relying solely on human sources\autocite{kobsaseid2003}. Using this method the experts do not need to update their profile manually and thus it is always up to date. 
 
 However this approach has many difficulties. Firstly it is can be difficult to find sources on which to judge the skill level of an expert in a particular area. An example source for scientist could be articles published but for artists this much more difficult as their work is more difficult to analyse. A common interdisciplinary source that can be used to within an organisation, are email communications. Emails can demonstrate expertise, as queries can be answered by the expert and communication patterns can help determine who has what knowledge with in the organisation\autocite{campbell2003}. However using such a source requires handling privacy concerns. 
-Even with a source of information it still difficult to determine the weight of the source. for example if a scientist co authors an article does that make the scientist an expert in that area? did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
+Even with a source of information it still difficult to determine the weight of the source. For example if a scientist co authors an article does that make the scientist an expert in that area? did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
 
 
 %should be simple
@@ -97,19 +97,19 @@ Even with a source of information it still difficult to determine the weight of 
 %projects people can search.
 %project page has title, description, goals, looking for who, comment section, links of people profile currently in the team
 \chapter{Requirements}
-The requirements of the project are prioritised in order to manage the project effectively. The most important requirements are given the tag High. These requirements must be completed before the end of the project. The next priority tag is Medium, any priorities with the Medium tag will be started only after the High tag requirements have been finished. While the Medium tag priorities are not essential, it is recommended that at least some of them be part of the system if not all. Finally the least important requirements will be given the tag Low. These requirements are not needed for the main functionality and only provide extra features for convenience .
+The requirements of the project are prioritised in order to manage the project effectively. The most important requirements are given the tag High. These requirements must be completed before the end of the project. The next priority tag is Medium, any priorities with the Medium tag will be started only after the High tag requirements have been finished. While the Medium tag priorities are not essential, it is recommended that at least some if not all of them be implemented. Finally the least important requirements will be given the tag Low. These requirements are not needed for the main functionality and only provide extra features for convenience .
 
 \subsection{High Priority}
 \subsubsection{Search for Collaborators} 
 This is has been identified as the most important requirement. The users shall be able to search for collaborators in the database. The criteria for search shall be:
 \begin{description}
-	\item[Area of work] The user must be able to search for collaborators in the database who are Artist or Scientists.
-	\item[Location] Search for collaborators in a particular city.
-	\item[Distance from user] Search for collaborators with in a certain distance from the city the user is in. The user will not need to register to use this functionality.
+	\item[Area of work:] The user must be able to search for collaborators in the database who are Artist or Scientists. Those areas will be further split into different types of Artists and Scientists. These must also be searchable.
+	\item[Location:] Search for collaborators in a particular city.
+	\item[Distance from user:] Search for collaborators with in a certain distance from the city the user is in. The user will not need to register to use this functionality.
 \end{description}
 	
 \subsubsection{Register and Log in} 
- User shall be able to register as member and customize their profile. To register the user must provide a first and last name as well choose a user name and password. Once the user has registered they can then customize their profile. The profile shall contain the following items:
+ User shall be able to register as member and customize their profile. To register the user must provide a first and last name as well choose a username and password. Once the user has registered they can then customize their profile. The profile shall contain the following items:
  \begin{itemize}
  \item first and last name (Required)
  \item age (optional)
@@ -125,15 +125,15 @@ This is has been identified as the most important requirement. The users shall b
  	Members can only edit their own profiles. While only administrators can remove members, which in turn will also remove the profile.
 
 \subsubsection{High usability} 
-This as been given a high priority as an application with high usability and consistent design will attract more users. Even with a functional application in order to for the application to be successful and help collaboration, the user must find it intuitive and easy to use.
+This as been given a high priority as an application with high usability and consistent design will attract more users. Even with a functional application, in order to for the application to be successful and help collaboration, the user must find it intuitive and easy to use.
 \subsection{Medium Priority}
 \subsubsection{Map visualization}
-This feature allows users to visually see the location of members in a map. The map will show user dots representing members on map. The dots will become bigger as more members are in a particular area. There should be a zoom functionality, as the user zooms in the more detailed density of the members becomes clear. This is likely to be the most difficult requirement and is likely to scoped down in order to be manageable with in the project deadlines.
+This feature allows users to visually see the location of members in a map. The map will show icons representing members on map. The dots will become bigger as more members are in a particular area. There should be a zoom functionality, as the user zooms in the more detailed density of the members becomes clear. This is likely to be the most difficult requirement and is likely to scoped down in order to be manageable with in the project deadlines.
 \subsubsection{Projects}
-This feature will allow members to create projects, that users can search for. The project should have a Title, description,images to demonstrate ideas, goals and what skills are required. The original member to start the project can edit the project and delete the project. There will be a comment section for each project allowing members to give feedback and ask questions. Administrator can only delete the project.
+This feature will allow members to create projects, that users can search for. The project should have a Title, description,images to demonstrate ideas, goals and what skills are required. The original member to start the project, can edit the project and delete the project. There will be a comment section for each project allowing members to give feedback and ask questions. Administrator can only delete the project.
 \subsection{Low Priority}
 \subsubsection{Forum}
-User will have the standard forum functionality available . Users will be able to create threads and post comments. 
+User will have the standard forum functionality available . Users will be able to create threads and post comments. Moderators maybe assigned with the chosen privileges. 
 
 \chapter{Technology Analysis}
 \section{Database}
@@ -141,9 +141,9 @@ The database will be used to store user details such as log in and password as w
 \subsection{MySQL}
 MySQL server is open source relational database with extensive customisation options for performance tuning. It also offers capabilities to set user accounts and permissions. The author has experience in working with MYSQl.
 \subsection{SQLite}
-SQLite is a relational database in the public domain. Unlike the other databases servers mentioned, this software does not operate in a client-server model,the database is contained within a file. Thus the SQLite databases can be embedded into an application while other databases works by having a separate database server with which to communicate.
+SQLite is a relational database in the public domain. Unlike the MyQl, SQLite does not operate in a client-server model as the database is contained within a file. Thus the SQLite databases can be embedded into an application while other databases works by having a separate database server with which to communicate.
 \subsection{Conclusion}
-Both database have similar features and both perform slightly different tasks. MySQL offers more control, while SQLite offers easy of set up. Due to the short time in which this project will take place, the MySQL database is chosen as the author has previous experience in it, allowing for immidiate productivity.
+Both database have similar features and both perform slightly different tasks. MySQL offers more control, while SQLite offers easy of set up. Due to the short time in which this project will take place, the MySQL database is chosen as the author has previous experience in it, allowing for immediate productivity.
 
 \section{Server Side} 
 \subsection{Ruby on Rails (RoR)}  
