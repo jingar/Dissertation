@@ -4,7 +4,7 @@
 \makeatother
 \usepackage[margin=1in]{geometry}
 \usepackage[doublespacing]{setspace}
-\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+\usepackage[citestyle=authoryear]{biblatex}
 \usepackage{graphicx}
 \addbibresource{references.bib}
 \begin{document}
@@ -13,15 +13,21 @@
 \maketitle
 \pagestyle{empty} %get rid of header/footer for toc page
 \tableofcontents %put toc in
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\listoffigures
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+\pagestyle{plain} % put headers/footers back on
+\listoftables
+\addtocontents{lot}{\protect\thispagestyle{empty}}
 \cleardoublepage %start new page
 \pagestyle{plain} % put headers/footers back on
 \setcounter{page}{1} %reset the page counter
 
-\chapter{Aims and Objectives}
-
+\chapter{Introduction}
+ASCUS(Art Science Collaborative) is a non profit volunteer organisation that is made up of a network of artists and scientists who are looking for interdisciplinary collaboration. ASCUS aim is to advocate and facilitate improved art science collaboration, science communication\autocite{ascus}. However ASCUS does not have any tools  to meet such aims. Currently ASCUS has a single static site which provides information on past events as well as information on the organisation. This site allows users , who wish to participate in collaboration to get initial ideas about the organisation and how to get involved. However the site does not actually help find potential collaboration opportunities. Thus in order to advocate and facilitate collaboration it must be possible for members of ASCUS to have a central location where they can easily and quickly find collaboration opportunities. This project will focus on implementing a application that will allow ASCUS to meet its aims of art and science collaboration.
+\section{Aims and Objectives}
 The aim of this project is to develop a web application in order to allow artist and scientist to find collaboration opportunities.
-
-The main objectives of the new system are:
+The main objectives of the new application are:
 \begin{itemize}
 	\item Develop a web application that will reduce work load on artist and scientist when looking for collaboration opportunities.
 	\item Develop facilities that allow artist and scientists to discuss ideas for collaborations.
@@ -29,16 +35,10 @@ The main objectives of the new system are:
 \end{itemize}
 	
 \chapter{Literature Review}
-%%%\section{collaboration}
-%\section{Artist and Scientist Collaboration}
-%The contribution that artists can make to research and development is that they often
-%approach problems in ways quite different from those of scientists and engineers, as
-%demonstrated by the crucial role played by designers and artists in computer human
-%interface research over the last years. The arts can function as an independent zone of
-%research. The concept of artist could incorporate other roles, such as that of researcher,inventor, hacker, and entrepreneur. Even within research labs, artist participation in
-%research teams might add a perspective that could drive the research process and continue
-%to contribute at all stages. Artists might very well value research according to criteria quite different from those of the commercial and scientiﬁc worlds. They might see aspects of the problems missed by the other researchers. The arts could become a place where abandoned, discredited,
-%and unorthodox inquires could be pursued.
+This section will cover the background literature consulted for this project. The literature that was consulted was focused on Expert locator systems. 
+
+Expert locator systems allow users to find experts in a particular area.
+This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. Thus before building the system , the areas that will be looked at are why do would or would not use an expert locator systems and different approaches to building an expert locators systems,
 \section{Organisational need for Expert locator}
 Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use there knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals\autocite{ackerman2003sharing}. Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried\autocite{fernandez2000}.
 
@@ -47,7 +47,7 @@ Hewlett Packard (HP), a company in the computers and electronic equipment market
  
 The National Security Agency (NSA) has also attempted to build a system to locate experts with in the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills with in the organisation\autocite{fernandez2000}.
 
-ASCUS has similar needs to the previous companies named. The organisation requires a tool that allows its members to find collaborators. Thus it needs to catalogue its members expertise, so they can be mined by members who are looking for collaborators. 
+ASCUS has similar needs to the previous companies named. The organisation requires a tool that allows its members to find collaborators. Thus it needs to catalogue its members' expertise, so they can be mined by members who are looking for collaborators. 
 	
 \section{Why do individuals want to seek experts?}
 Yimam-Seid and Kobsa(\citeyear{kobsaseid2003}) offer a few reasons as to why individuals may seek experts They state there are two major reasons why individuals seek experts. (a) They need specific information from the expert and (b) They need the expert who to perform some function. The people seeking experts for the first reasons are usually looking to replace or complement other sources of information such as documents. Some scenarios for this reason include seeking information that is not documented, using experts to minimize ones own effort or individuals may prefer interacting with humans rather than documents or computers. 
@@ -148,14 +148,14 @@ Both database have similar features and both perform slightly different tasks. M
 \subsection{Ruby on Rails (RoR)}  
 Ruby on Rails is a framework built on ruby programming languages and uses a MVC arhictecture. The RoR philosophy is convention over configuration. By following the set of conventions the developer can be more productive and the framework "just works". Thus it is possible to be very productive but it does have a steep learning curve. Further it is relatively new, being created in 2005, it lacks the mature documentation of `.
 
-\subsection{ Active Server Pages (ASP)} 
- Active Server Pages (ASP) is a server-side environment from Microsoft, that you can use to create and run dynamic web applications. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system.Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools allow for cross platform functionality, it does integrate well with other windows technologies.
+\subsection{Active Server Pages (ASP)} 
+ Active Server Pages (ASP) is a web framework from Microsoft, that you can use to create and run dynamic web applications\autocite{microsoftasp}. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system.Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools allow for cross platform functionality, it does integrate well with other windows technologies.
  
 \subsection{PHP Hypertext Processor (PHP) } 
 PHP is a general purpose language suited for web development. It provides many features suited for web development and can be used as scripting language. PHP is one of the most widely used programming languages for the web, thus has mature documentation as well as plethora of tools to support its development. It also considered to the have lowest barrier to entry as it is very easy to set up. Furthermore the author has previous experience in PHP.
 
 \subsection{Conclusion}
-PHP will be used to perform server side scripting for the website system, as it is mature and well documented. Furthermore the previous experience allows the author to be productive very quickly in comparison to the other technologies.
+PHP will be used for server side scripting, as it is mature and well documented. Furthermore the previous experience allows the author to be productive sooner than with other technologies.
 \section{Testing}
 In order to preform thorough testing it is important to automate the testing by using a testing framework. By automating it becomes easy to perform tests after every change to the application and any issues will be immediately reported. From this, it saves the developer from wasting time manually running algorithms on data.Furthermore Automated tests can easily execute many of different types of test cases during every test run providing a wide coverage which is difficult to do manual tests.
 
@@ -201,14 +201,14 @@ By using iterative development , the unpredictable nature of working users can b
 Any issues regarding requirements or user interface design can be solved early on in the development process. Using the waterfall method it would too late to go back and make changes to the design, if there were any misunderstandings in the requirements.
 In conclusion many of the problems in encountered when developing interactive software can be dealt with using iterative development. 
 
-\chapter{Initial Design and Implementation}
+\chapter{Initial Design}
 \section{Initial User Interface Design}
 This section will give an overview of the user interface prototypes created so far. There purpose is to get initial feedback on the interface of the main requirements.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth,height=10cm]{../Desktop/search.jpg}
-\caption{Caption of the figure}
+\caption{Search Page}
 \end{figure}
 This interface design is for allowing users to search for collaborators. The search bars allow the users to search by occupation, location and radius of the location.
 Once the search is complete, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and the first few words of their biography are shown. The far right hand side shows popular areas in which members have claimed they have expertise in
@@ -219,19 +219,22 @@ The second figure shows the interface design for the second main requirement, th
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
-\caption{Caption of the figure}
+\caption{Profile Page}
 \end{figure}
 The profile contains useful information that users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
 
 On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the user the is appropriate for collaboration.
 \newpage
 
+\section{Initial Database Design}
+In order for the database design to reflect the requirements, it is important to identify the separate entities with in the requirements. Three entities were identified, member who has registered, the member's profile and areas of expertise the user has. The figure below shows the relation ship between the entities.
+
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
-\caption{Caption of the figure}
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/database_diagram.jpg}
+\caption{Initial ER-Diagram}
 \end{figure}
-
+The relationship between an member and his/her profile is a one-to-one. Each member must have a profile and vice-versa.
 \chapter{Initial Testing Strategy and Evaluation}
 This chapter describes the plan for testing and evaluating the system.
 \section{System Evaluation}
@@ -243,8 +246,6 @@ In order to gain even more feedback a semi structured interview will be used. It
 
 Before any questionnaire and interviews are conducted the user will be given an consent form detailing what will the questionnaire/interview involve, all information gathered will be anonymised, the user can withdraw their participation as they see fit and any recordings will only be kept as long as necessary for the project.
 \section{System Testing Strategy}
-
-
 \chapter{Project Plan}
 A high level plan below describes the key tasks to be achieved.
 \begin{center}
