@@ -147,10 +147,10 @@ Both database have similar features and both perform slightly different tasks. M
 
 \section{Server Side} 
 \subsection{Ruby on Rails (RoR)}  
-Ruby on Rails is a framework built on ruby programming languages and uses a MVC arhictecture. The RoR philosophy is convention over configuration. By following the set of conventions the developer can be more productive and the framework "just works". Thus it is possible to be very productive but it does have a steep learning curve. Further it is relatively new, being created in 2005, it lacks the mature documentation of `.
+Ruby on Rails is a framework built on the ruby programming languages and uses a MVC arhictecture. The RoR philosophy is convention over configuration. By following the set of conventions the developer can be more productive and the framework "just works". Thus it is possible to be very productive but it does have a steep learning curve. Further it is relatively new, being created in 2005, it lacks the mature documentation.
 
 \subsection{Active Server Pages (ASP)} 
- Active Server Pages (ASP) is a web framework from Microsoft, that you can use to create and run dynamic web applications\autocite{microsoftasp}. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system.Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools allow for cross platform functionality, it does integrate well with other windows technologies.
+ Active Server Pages (ASP) is a web framework from Microsoft, that you can use to create and run dynamic web applications\autocite{microsoftasp}. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system. Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools that allow for cross platform functionality, it does integrate well with other windows technologies.
  
 \subsection{PHP Hypertext Processor (PHP) } 
 PHP is a general purpose language suited for web development. It provides many features suited for web development and can be used as scripting language. PHP is one of the most widely used programming languages for the web, thus has mature documentation as well as plethora of tools to support its development. It also considered to the have lowest barrier to entry as it is very easy to set up. Furthermore the author has previous experience in PHP.
@@ -158,16 +158,16 @@ PHP is a general purpose language suited for web development. It provides many f
 \subsection{Conclusion}
 PHP will be used for server side scripting, as it is mature and well documented. Furthermore the previous experience allows the author to be productive sooner than with other technologies.
 \section{Testing}
-In order to preform thorough testing it is important to automate the testing by using a testing framework. By automating it becomes easy to perform tests after every change to the application and any issues will be immediately reported. From this, it saves the developer from wasting time manually running algorithms on data.Furthermore Automated tests can easily execute many of different types of test cases during every test run providing a wide coverage which is difficult to do manual tests.
+In order to preform thorough testing it is important to automate the testing by using a testing framework. By automating it becomes easy to perform tests after every change to the application and any issues will be immediately reported. Thus it saves the developer from wasting time manually running algorithms on data. Furthermore Automated tests can be easily execute many different types of tests thus providing a wide coverage which is difficult to do manual tests.
 
-For PHP two popular unit testing frameworks will be considered, PHPUnit and SimpleTest. Both testing frameworks provide similar features such as creating unit tests , running them automatically and showing failed tests and passed test. Therefore evaluating the frameworks will focus on other aspects such as documentations, integration with other tools.
+For PHP two popular unit testing frameworks will be considered, PHPUnit and SimpleTest. Both testing frameworks provide similar features such as creating unit tests, running them automatically and showing failed tests and passed test. Therefore evaluating the frameworks will focus on other aspects such as documentations, integration with other tools.
 \subsection{PHPunit}
-PHPUnit is the standard unit testing framework that is included in many PHP framkeworks such as Zend Framework, Cake PHP. PHPUnit is well maintained as   updates have been done regularly. PHPUnit seems to have larger user base as well as more online tutorials. PHPUnit is integrated into many PHP IDEs  such as Eclipse, Netbeans, Zend Studie, PHPStorm. PHPUnit requires a terminal inorder to run tests.
+PHPUnit is the standard unit testing framework that is included in many PHP framkeworks such as Zend Framework, Cake PHP. PHPUnit is well maintained as updates have been done regularly. PHPUnit seems to have larger user base as well as more online tutorials. PHPUnit is integrated into many PHP IDEs  such as Eclipse, Netbeans, Zend Studie, PHPStorm. PHPUnit requires a terminal in order to run tests making it difficult to use on a remote server.
 \subsection{SimpleTest}
-SimpleTest is another unit testing framework with the focus on simplicity. SimpleTest is not well maintained with last update over a year ago. SimpleTest does offer the ability to run tests in a web browser thus not needing a terminal, which can be useful when working on a remote web server.Furthermore adding SimpleTest to a project is easy as simply using the include command in a PHP script. While many tutorials are available for SimplTest, many of them are over a year  old. Eclipse IDE offers a SimpleTest plugin.
+SimpleTest is another unit testing framework with the focus on simplicity. SimpleTest is not well maintained with last update over a year ago. SimpleTest does offer the ability to run tests in a web browser thus not needing a terminal, which can be useful when working on a remote web server.Furthermore adding SimpleTest to a project is easy as simply using the include command in a PHP script. While many tutorials are available for SimpleTest, many of them are over a year old. Eclipse IDE offers a SimpleTest plugin.
 
 \subsection{Conclusion}
-While SimpleTest and PHPUnit offer similar in features in terms of creating tests and automatically running them, PHPUnit is better maintained thus easier to find documentations and help with issues should any arise. 
+While SimpleTest and PHPUnit offer similar in features in terms of creating tests and automatically running them. PHPUnit is better maintained thus easier to find documentations and help with issues should any arise. 
 
 
 \chapter{Risks Assessment}
@@ -178,13 +178,13 @@ While SimpleTest and PHPUnit offer similar in features in terms of creating test
     \hline
     Risk & Probability & Severity & Mitigation Strategy \\ 
     \hline
-    Browser compatibility issues & High & Moderate & Constantly test browser compatibility through out the development cycle.Leverage automatic test frameworks in order to supplement manual testing.\\ \hline
+    Browser compatibility issues & High & Moderate & Constantly test browser compatibility through out the development cycle. Leverage automatic test frameworks in order to supplement manual testing.\\ \hline
     Fall behind on plan & Moderate & Moderate & Give small leeway time for each part of the application. If significantly behind schedule then only complete vital parts of the application.  \\ \hline
     Person of interest is unavailable & Moderate & Moderate &  Another client is kept up to date with the main development of the application.\\ 
     \hline
 Users find the system unusable & Moderate & High & Follow user centred design approach. Maintain regular meetings with the client. User testing must be carried out extensively and feedback should be integrated into the next iteration. \\ 
     \hline
-    Low quality feedback & Low & Moderate & Pilot all methods used to gain user feedback. If low quality feedback is given reassess previous methods for weaknesses and integrated any findings into a new- questionnaire. \\ 
+    Low quality feedback & Low & Moderate & Pilot all methods used to gain user feedback. If low quality feedback is given reassess previous methods for weaknesses and integrated any finding. \\ 
     \hline
     
     \end{tabular}
@@ -211,20 +211,20 @@ This section will give an overview of the user interface prototypes created so f
 \includegraphics[width=\textwidth,height=10cm]{../Desktop/search.jpg}
 \caption{Search Page}
 \end{figure}
-This interface design is for allowing users to search for collaborators. The search bars allow the users to search by occupation, location and radius of the location.
-Once the search is complete, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and the first few words of their biography are shown. The far right hand side shows popular areas in which members have claimed they have expertise in
+This interface design is for allowing users to search for collaborators. The search bars allow the users to search by area of work, location and radius of the location.
+Once the search is completed, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and first few words of their biography shown. The far right hand side shows popular areas in which members have claimed they have expertise in
 \\
 \\
-The second figure shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
+The figure below shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
 \caption{Profile Page}
 \end{figure}
-The profile contains useful information that users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
+The profile contains useful information that other users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
 
-On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the user the is appropriate for collaboration.
+On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the registered member is appropriate for collaboration.
 \newpage
 
 \section{Initial Database Design}
@@ -243,7 +243,7 @@ In order for the many-to-many relationship to be implemented it must require an 
 \chapter{Initial Evaluation and Testing Strategy}
 This chapter describes the plan for testing and evaluating the system.
 \section{System Evaluation}
-In order to meet the high usability requirement, it is important to involve users when developing the system and user interface. If the system is not usable then the users will not use the system, rendering the project pointless.
+In order to meet the high usability requirement, it is important to involve users when developing the system and user interface. If the system is not usable it will lead to a system that no one will use thus rendering the project unsuccessful.
 
 In order to evaluate the system, prototypes will be used. The system evaluation will be conducted by allowing expected system users to interact with the prototypes. Afterwards the user will be asked to fill out an questionnaire, which will include open and closed questions. The closed questions will be used focus on a particular aspect of the design, while open questions will be used to get in depth feedback. 
 
@@ -251,12 +251,14 @@ In order to gain even more feedback a semi structured interview will be used. It
 
 Before any questionnaire and interviews are conducted the user will be given an consent form detailing what will the questionnaire/interview involve, all information gathered will be anonymised, the user can withdraw their participation as they see fit and any recordings will only be kept as long as necessary for the project.
 \section{System Testing Strategy}
-In order to sufficiently test the system , the testing strategy will be split into two parts, testing during development and testing after development.
+In order to sufficiently test the system the testing strategy will be split into two parts, testing during development and testing after development.
 Rather than testing being a separate phase in development, it will be integrate into the development cycle. After each feature and or the smallest independent part is completed, tests will be written for said part. The tests will be unit tests and will be written using the PHPUnit test framework. 
 
-Using the automated test framework , this allows us to carry out integration testing as well. As development progress, tests can be run after the integration of different parts of the application. If the integration causes any unforeseen, bugs the automatic testing should signal a problem. This way the bugs can be caught early on when integrating and thus in theory the system should be bug free throughout the development.
+Using the automated test framework, this allows us to carry out integration testing as well. As development progress, tests can be run after the integration of different parts of the application. If the integration causes any unforeseen, bugs the automatic testing should signal a problem. This way the bugs can be caught early on when integrating and thus in theory the system should be bug free throughout the development.
 
-Due to the unpredictable nature of users , it is impossible to foresee all potential problems with the system and test for them. Thus it is important to carry out testing involving the users before releasing  the final system. After all features that are to be implemented have been finished the beta testing will begin. The system will be released to a subset of the users and the users will be given an email address to which they can send there issues. Sample data will be added in order to typical use of some features e.g. sample profiles will be added so the searching functionality can be used. It is likely that this testing will happen for a short and fixed amount of time due to the static deadlines.
+Due to the unpredictable nature of users, it is impossible to foresee all potential problems with the system and test for them. Thus it is important to carry out testing involving the users before releasing  the final system. After all features that are to be implemented have been finished the beta testing will begin. The system will be released to a subset of the users and the users will be given an email address to which they can send there issues. The issues will be prioritised and the highest priority issues will be dealt with first.
+
+Sample data will be added in order to typical use of some features e.g. sample profiles will be added so the searching functionality can be used. It is likely that this testing will happen for a short and fixed amount of time due to the static deadlines.
 \chapter{Project Plan}
 A high level plan below describes the key tasks to be achieved.
 \begin{center}
