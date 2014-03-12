@@ -4,12 +4,12 @@
 \makeatother
 \usepackage[margin=1in]{geometry}
 \usepackage[doublespacing]{setspace}
-\usepackage[citestyle=authoryear]{biblatex}
+\usepackage[style=authoryear,citestyle=authoryear,sorting=nyt]{biblatex}
 \usepackage{graphicx}
 \addbibresource{references.bib}
 \begin{document}
-\title{Ascus - Collaboration Finder}
-\author{Saad Arif\\Fourth Year Dissertation - First Deliverable \\ Supervisor: Ruth Aylett \\ Second Reader: Patricia Vargas}
+\title{ASCUS - Collaboration Finder}
+\author{Saad Arif\\ Marticulation Number: H00011110 \\Fourth Year Dissertation - First Deliverable \\ Supervisor: Ruth Aylett \\ Second Reader: Patricia Vargas}
 \maketitle
 \pagestyle{empty} %get rid of header/footer for toc page
 \tableofcontents %put toc in
@@ -24,28 +24,28 @@
 \setcounter{page}{1} %reset the page counter
 
 \chapter{Introduction}
-ASCUS(Art Science Collaborative) is a non profit volunteer organisation that is made up of a network of artists and scientists who are looking for interdisciplinary collaboration. ASCUS' aim is to advocate and facilitate improved art science collaboration and science communication\autocite{ascus}. However ASCUS does not have any tools  to meet such aims. Currently ASCUS has a single static site which provides information on past events as well as information on the organisation. This site allows users who wish to participate in collaboration to get initial ideas about the organisation and how to get involved. However the site does not actually help find potential collaboration opportunities. Thus in order to advocate and facilitate collaboration it must be possible for members of ASCUS to have a central location where they can easily and quickly find collaboration opportunities. This project will focus on implementing a application that will allow ASCUS to meet its aims of art and science collaboration.
+ASCUS(Art Science Collaborative) is a non profit volunteer organisation that is made up of a network of artists and scientists who are looking for interdisciplinary collaboration. ASCUS' aim is to advocate and facilitate improved art science collaboration and science communication \autocite{ascus}. However ASCUS does not have any tools  to meet such aims. Currently ASCUS has a single static site which provides information on past events as well as information on the organisation. This site allows users who wish to participate in collaboration to get initial ideas about the organisation and how to get involved. However the site does not actually help to find potential collaboration opportunities. Thus in order to advocate and facilitate collaboration it must be possible for members of ASCUS to have a central location where they can easily and quickly find collaboration opportunities. This project will focus on implementing a application that will allow ASCUS to meet its aims of art and science collaboration.
 \section{Aims and Objectives}
-The aim of this project is to develop a web application in order to allow artist and scientist to find collaboration opportunities.
+The aim of this project is to develop a web application in order to allow artists and scientists to find collaboration opportunities.
 The main objectives of the new application are:
 \begin{itemize}
-	\item Develop a web application that will reduce work load on artist and scientist when looking for collaboration opportunities.
-	\item Develop facilities that allow artist and scientists to discuss ideas for collaborations.
-	\item The application should be designed in a way that allows both artist and scientist to use it effectively.
+	\item Develop a web application that will reduce work load on artists and scientists when looking for collaboration opportunities.
+	\item Develop facilities that allow artists and scientists to discuss ideas for collaborations.
+	\item The application should be designed in a way that allows both artists and scientists to use it effectively.
 \end{itemize}
 	
 \chapter{Literature Review}
 This section will cover the background literature consulted for this project. The literature that was consulted was focused on Expert locator systems. 
 
 Expert locator systems allow users to find experts in a particular area.
-This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. The areas that will be looked at are, what are the reasons for using expert systems, how users find expert without tools and different approaches to building an expert locator systems,
+This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. The areas that will be looked at are, what are the reasons for using expert systems, how users find experts without tools and different approaches to building an expert locator systems.
 \section{Organisational need for Expert locator}
-Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use there knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals\autocite{ackerman2003sharing}. Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried\autocite{fernandez2000}.
+Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use their knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals  \autocite{ackerman2003sharing}. Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried \autocite{fernandez2000}.
 
 Examples of organisations developing expert finding systems: \\
-Hewlett Packard (HP), a company in the computers and electronic equipment market developed  an Expert-Finder. The goal of the project was to build a network of experts which consisted of a database user profiles. The user profiles gave a summary of the users knowledge and skill\autocite{fernandez2000}.
+Hewlett Packard (HP), a company in the computers and electronic equipment market developed  an Expert-Finder. The goal of the project was to build a network of experts which consisted of a database user profiles. The user profiles gave a summary of the users knowledge and skill \autocite{fernandez2000}.
  
-The National Security Agency (NSA) has also attempted to build a system to locate experts with in the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills with in the organisation\autocite{fernandez2000}.
+The National Security Agency (NSA) has also attempted to build a system to locate experts within the organisations. The goal of the his project was similar to HP, identification and cataloguing of knowledge and skills within the organisation \autocite{fernandez2000}.
 
 ASCUS has similar needs to the previous companies named. The organisation requires a tool that allows its members to find collaborators. Thus it needs to catalogue its members' expertise, so they can be mined by members who are looking for collaborators. 
 	
@@ -57,27 +57,27 @@ People seeking experts for the second reasons need experts for a continued perio
 ASCUS members looking for collaboration fall into both categories. While members may be be looking for active collaborators to participate with in their project, they may also be seeking advice or information into a field they have no expertise in. Thus it is important for the system to facilitate both types of members.
 
 \subsection{Why people do not want to seek experts?}
-Allen (\citeyear{allen1977}) noted some reasons as to why information seekers may not want to use their colleagues as a source of information and prefer the use other information channels. In his study of 19 engineers, he found a higher correlation between frequency of use with accessibility than with quality of the source of information. He further found that information seekers, found the transaction of information seeking as a costly one. The the cost was perceived in the chance of a response that maybe "ego threatening", a loss in status and seeming incompetent. For these reasons engineers would first look at documentation as a source of information. 
+Allen (\citeyear{allen1977}) noted some reasons as to why information seekers may not want to use their colleagues as a source of information and prefer the use other information channels. In his study of 19 engineers, he found a higher correlation between frequency of use with accessibility than with quality of the source of information. He further found that information seekers, found the transaction of information seeking as a costly one. The cost was perceived in the chance of a response that maybe "ego threatening", a loss in status and seeming incompetent. For these reasons engineers would first look at documentation as a source of information. 
 
 While it has been shown there are issues when seeking experts, they are not of primary concern. ASCUS is organisation for collaboration thus it is assumed that members are looking for interaction. Further it can be assumed that many members have already been part of collaborations and thus the previously stated issues should not apply to these members.
 \subsection{Stages of finding Expertise}	
 \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) identified three stages individuals went through to find expertise with in an organisation. These stages were Expertise Identification, Expertise Selection and Escalation.  
 \subsubsection{Expertise Identification} 
-Expert identification is defined as \enquote {the problem of knowing what information or special skills other individuals have.} It is further noted that expertise identification is difficult problem to solve. It contains many varying factors such as what is expertise , how will it be used within the given context and the problem of handling the change of individuals skills and expertise as time goes on. One solution to such expertise identification is to \enquote {consider the types of historical artifacts that are employed by local users as resources and then incorporate use of those within the system.}\autocite{mcdonalackerman1998}
+Expert identification is defined as \enquote {the problem of knowing what information or special skills other individuals have.} It is further noted that expertise identification is difficult problem to solve. It contains many varying factors such as what is expertise , how will it be used within the given context and the problem of handling the change of individuals skills and expertise as time goes on. One solution to such expertise identification is to \enquote {consider the types of historical artifacts that are employed by local users as resources and then incorporate use of those within the system.}      \autocite{mcdonalackerman1998}
 \subsubsection{Expertise Selection} 
 After determining who has what expertise it is intuitive to then select the most appropriate individual(s) that will solve the problem. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) define expertise selection as \enquote {appropriately choosing among people with the required expertise.} Furthermore they observed that expert seekers usually used three expertise selection criteria, \enquote {organizational criteria, load on the source and performance.} Expert seekers tried to find experts that were local and when that failed they went to different departments within the organisations. Expert seekers, further more took into account how busy experts were, approaching the least busy first. Finally they firstly approached experts that were better at explaining solutions or had better \enquote {attitudes}.
 
 \subsubsection{Expertise Escalation} 
-Escalation is the process by which people resolve the failure of the expertise identification or selection mechanism. The expertise seeker may try to identify other experts or pursue other experts that maybe able to solve the problem.  This does may involve asking members higher up in the organisation hierarchy, asking help from less desirable experts or even searching for experts in a different department within the organisation\autocite{mcdonalackerman1998}.
+Escalation is the process by which people resolve the failure of the expertise identification or selection mechanism. The expertise seeker may try to identify other experts or pursue other experts that maybe able to solve the problem.  This does may involve asking members higher up in the organisation hierarchy, asking help from less desirable experts or even searching for experts in a different department within the organisation \autocite{mcdonalackerman1998}.
 \\
 \\
 The system being built should emulate the first two stages and try to avoid the third stage as much as possible. When the system carries out expertise identification, it should aim to asses if individual is an expert in a particular area with as much accuracy as possible. In the second stage the system should order the found candidates in an ranked list with the top candidate being the most useful to expert seeker. The ideal solution would be to never reach the expertise escalation stage at all but their is no known system that is 100\% accurate in expertise identification and selection. Furthermore it is unclear from the literature as to how a system can help the user in the expertise escalation stage.
 
 \subsection{Traditional Approach}
 Many organisations contain roles which act as expertise or information locators.
-In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation, which served to bring relevant information to informations seekers. Other researchers have have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person was looking for expertise, they would ask the expertise concierge about people who maybe be able to help them. The concierge will use their knowledge to suggest individuals that match the query.
+In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation, which served to bring relevant information to informations seekers. Other researchers have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person was looking for expertise, they would ask the expertise concierge about people who maybe be able to help them. The concierge will use their knowledge to suggest individuals that match the query.
 
-One way in which the previously stated roles can be emulated and automated is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. The expert database will return a set of individuals that may be of help. Furthermore the expert database may return the individuals in a ranked list. Individuals higher up the list will be more likely to be of help. However such a system do have limitations\autocite{kobsaseid2003}.
+One way in which the previously stated roles can be emulated and automated is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. The expert database will return a set of individuals that may be of help. Furthermore the expert database may return the individuals in a ranked list. Individuals higher up the list will be more likely to be of help. However such a system do have limitations \autocite{kobsaseid2003}.
 \begin{enumerate}
 	\item Developing the databases is a labour intensive and expensive.
 	\item For the such a system to work , it relies on the experts willingness to spend time 		  			  initially providing information about their expertise.
@@ -86,10 +86,10 @@ One way in which the previously stated roles can be emulated and automated is by
 \end{enumerate}
 
 \subsection{Contemporary Approach}
-In order to combat the limitations of the traditional approach the expert finding process can be further automated. This is done by automatically obtaining information on experts from many different sources and not relying solely on human sources\autocite{kobsaseid2003}. Using this method the experts do not need to update their profile manually and thus it is always up to date. 
+In order to combat the limitations of the traditional approach the expert finding process can be further automated. This is done by automatically obtaining information on experts from many different sources and not relying solely on human sources \autocite{kobsaseid2003}. Using this method the experts do not need to update their profile manually and thus it is always up to date. 
 
-However this approach has many difficulties. Firstly it is can be difficult to find sources on which to judge the skill level of an expert in a particular area. An example source for scientist could be articles published but for artists this much more difficult as their work is more difficult to analyse. A common interdisciplinary source that can be used to within an organisation, are email communications. Emails can demonstrate expertise, as queries can be answered by the expert and communication patterns can help determine who has what knowledge with in the organisation\autocite{campbell2003}. However using such a source requires handling privacy concerns. 
-Even with a source of information it still difficult to determine the weight of the source. For example if a scientist co authors an article does that make the scientist an expert in that area? did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
+However this approach has many difficulties. Firstly it is can be difficult to find sources on which to judge the skill level of an expert in a particular area. An example source for scientist could be articles published but for artists this much more difficult as their work is more difficult to analyse. A common interdisciplinary source that can be used to within an organisation, are email communications. Emails can demonstrate expertise, as queries can be answered by the expert and communication patterns can help determine who has what knowledge with in the organisation \autocite{campbell2003}. However using such a source requires handling privacy concerns. 
+Even with a source of information it still difficult to determine the weight of the source. For example if a scientist co-authors an article does that make the scientist an expert in that area? Did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
 
 
 %should be simple
@@ -150,7 +150,7 @@ Both database have similar features and both perform slightly different tasks. M
 Ruby on Rails is a framework built on the ruby programming languages and uses a MVC arhictecture. The RoR philosophy is convention over configuration. By following the set of conventions the developer can be more productive and the framework "just works". Thus it is possible to be very productive but it does have a steep learning curve. Further it is relatively new, being created in 2005, it lacks the mature documentation.
 
 \subsection{Active Server Pages (ASP)} 
- Active Server Pages (ASP) is a web framework from Microsoft, that you can use to create and run dynamic web applications\autocite{microsoftasp}. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system. Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools that allow for cross platform functionality, it does integrate well with other windows technologies.
+ Active Server Pages (ASP) is a web framework from Microsoft, that you can use to create and run dynamic web applications \autocite{microsoftasp}. In order to use ASP a the server must run a Microsoft I.I.S. (Internet Information Server) operating system. Further more the database must be Microsoft SQL Server(MS-SQL). Though it is only limited to the windows platform, without considering third party tools that allow for cross platform functionality, it does integrate well with other windows technologies.
  
 \subsection{PHP Hypertext Processor (PHP) } 
 PHP is a general purpose language suited for web development. It provides many features suited for web development and can be used as scripting language. PHP is one of the most widely used programming languages for the web, thus has mature documentation as well as plethora of tools to support its development. It also considered to the have lowest barrier to entry as it is very easy to set up. Furthermore the author has previous experience in PHP.
@@ -208,7 +208,7 @@ This section will give an overview of the user interface prototypes created so f
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\textwidth,height=10cm]{../Desktop/search.jpg}
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/Search.jpg}
 \caption{Search Page}
 \end{figure}
 This interface design is for allowing users to search for collaborators. The search bars allow the users to search by area of work, location and radius of the location.
@@ -232,7 +232,7 @@ In order for the database design to reflect the requirements, it is important to
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\textwidth,height=10cm]{../Desktop/database_diagram.jpg}
+\includegraphics[width=\textwidth,height=10cm]{../Desktop/ER.jpg}
 \caption{Initial ER-Diagram}
 \end{figure}
 The relationship between an member and his/her profile is a one-to-one. Each member must have a profile and vice-versa.
