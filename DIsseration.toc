@@ -26,68 +26,104 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Contemporary Approach}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Requirements}{7}
+\contentsline {subsection}{\numberline {2.2.5}Recommendation Systems}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.5}High Priority}{7}
+\contentsline {subparagraph}{Volume}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Search for Collaborators}{7}
+\contentsline {subparagraph}{Benefit and Cost}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Register and Log in}{8}
+\contentsline {subparagraph}{Consumers and Producers}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{High usability}{8}
+\contentsline {subparagraph}{Social Implications}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.6}Medium Priority}{8}
+\contentsline {subparagraph}{Privacy}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Map visualization}{8}
+\contentsline {section}{\numberline {2.3}Conclusion}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Projects}{9}
+\contentsline {chapter}{\numberline {3}Technology Analysis}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.7}Low Priority}{9}
+\contentsline {section}{\numberline {3.1}Database}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Forum}{9}
+\contentsline {subsection}{\numberline {3.1.1}MySQL}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Technology Analysis}{10}
+\contentsline {subsection}{\numberline {3.1.2}SQLite}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Database}{10}
+\contentsline {subsection}{\numberline {3.1.3}Conclusion}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}MySQL}{10}
+\contentsline {section}{\numberline {3.2}Server Side}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}SQLite}{10}
+\contentsline {subsection}{\numberline {3.2.1}Ruby on Rails (RoR)}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Conclusion}{10}
+\contentsline {subsection}{\numberline {3.2.2}Active Server Pages (ASP)}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Server Side}{11}
+\contentsline {subsection}{\numberline {3.2.3}PHP Hypertext Processor (PHP) }{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Ruby on Rails (RoR)}{11}
+\contentsline {subsection}{\numberline {3.2.4}Conclusion}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Active Server Pages (ASP)}{11}
+\contentsline {section}{\numberline {3.3}Testing}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}PHP Hypertext Processor (PHP) }{11}
+\contentsline {subsection}{\numberline {3.3.1}PHPunit}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Conclusion}{11}
+\contentsline {subsection}{\numberline {3.3.2}SimpleTest}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Testing}{11}
+\contentsline {subsection}{\numberline {3.3.3}Conclusion}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}PHPunit}{12}
+\contentsline {chapter}{\numberline {4}Project Methodology}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}SimpleTest}{12}
+\contentsline {subsection}{\numberline {4.0.4}Development Methodology}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Conclusion}{12}
+\contentsline {subsection}{\numberline {4.0.5}Detailing Iterative Development}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Risks Assessment}{13}
+\contentsline {subsection}{\numberline {4.0.6}Testing Strategy}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Methodology}{14}
+\contentsline {subparagraph}{Unit Testing}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Initial Design}{15}
+\contentsline {subparagraph}{Integration Testing}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Initial User Interface Design}{15}
+\contentsline {subparagraph}{Alpha Testing}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Initial Database Design}{17}
+\contentsline {chapter}{\numberline {5}First Iteration}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Initial Evaluation and Testing Strategy}{18}
+\contentsline {subsection}{\numberline {5.0.7}Requirements}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}System Evaluation}{18}
+\contentsline {subsection}{\numberline {5.0.8}High Priority}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}System Testing Strategy}{19}
+\contentsline {subsubsection}{Search for Collaborators}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Project Plan}{20}
+\contentsline {subsubsection}{Register and Log in}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{High usability}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.0.9}Medium Priority}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Map visualization}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Projects}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.0.10}Low Priority}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Forum}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Design}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}User Interface}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Search Page}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Profile Page}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Home Page}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Log in}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Risks Assessment}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Initial Database Design}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Initial Evaluation and Testing Strategy}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}System Evaluation}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}System Testing Strategy}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Project Plan}{27}

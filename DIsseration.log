@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.14)  12 MAR 2014 22:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.14)  17 APR 2014 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,88 +449,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
-[4] [5] [6]
-Chapter 3.
-[7
+[4] [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 113--117
 
-] [8] [9]
-Chapter 4.
+ []
+
+[8] [9]
+Chapter 3.
 [10
 
 ] [11] [12]
-Chapter 5.
+Chapter 4.
+[13
 
-Underfull \hbox (badness 1082) in paragraph at lines 181--181
+]
+Underfull \hbox (badness 10000) in paragraph at lines 171--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--181
+
+ []
+
+[14] [15]
+Chapter 5.
+[16
+
+] [17] [18] <People.jpg, id=81, 792.9625pt x 695.59875pt>
+File: People.jpg Graphic file (type jpg)
+ <use People.jpg>
+Package pdftex.def Info: People.jpg used on input line 244.
+(pdftex.def)             Requested size: 452.97339pt x 284.52866pt.
+
+[19 <./People.jpg>] <Profile.jpg, id=85, 791.95876pt x 702.625pt>
+File: Profile.jpg Graphic file (type jpg)
+
+<use Profile.jpg>
+Package pdftex.def Info: Profile.jpg used on input line 254.
+(pdftex.def)             Requested size: 452.96797pt x 284.5294pt.
+ [20 <./Profile.jpg>]
+<Homepage.jpg, id=90, 803.0pt x 695.59875pt>
+File: Homepage.jpg Graphic file (type jpg)
+ <use Homepage.jpg>
+Package pdftex.def Info: Homepage.jpg used on input line 269.
+(pdftex.def)             Requested size: 452.97293pt x 284.52866pt.
+ [21 <./Homepage.jpg>] <Log_in.jpg, id=94, 791.95876pt x 505.89pt>
+File: Log_in.jpg Graphic file (type jpg)
+ <use Log_in.jpg>
+Package pdftex.def Info: Log_in.jpg used on input line 279.
+(pdftex.def)             Requested size: 452.96797pt x 284.53154pt.
+ [22 <./Log_in.jpg>]
+Chapter 6.
+
+Underfull \hbox (badness 1082) in paragraph at lines 293--293
 \OT1/cmr/m/n/10.95 vel-op-ment cy-cle. Lever-age
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 185--186
+Underfull \hbox (badness 2495) in paragraph at lines 297--298
 []\OT1/cmr/m/n/10.95 Follow user cen-tred de-sign
  []
 
-[13
+[23
 
-]
-Chapter 6.
-[14
-
-]
-Chapter 7.
-<../Desktop/Search.jpg, id=69, 792.9625pt x 695.59875pt>
-File: ../Desktop/Search.jpg Graphic file (type jpg)
-
-<use ../Desktop/Search.jpg>
-Package pdftex.def Info: ../Desktop/Search.jpg used on input line 211.
-(pdftex.def)             Requested size: 452.97339pt x 284.52866pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--219
-
- []
-
-[15
-
- <../Desktop/Search.jpg>]
-<../Desktop/Profile.jpg, id=73, 791.95876pt x 702.625pt>
-File: ../Desktop/Profile.jpg Graphic file (type jpg)
-
-<use ../Desktop/Profile.jpg>
-Package pdftex.def Info: ../Desktop/Profile.jpg used on input line 222.
-(pdftex.def)             Requested size: 452.96797pt x 284.5294pt.
- [16 <../Desktop/Profile.jpg>]
-<../Desktop/ER.jpg, id=77, 736.7525pt x 679.53876pt>
+] <../Desktop/ER.jpg, id=101, 736.7525pt x 679.53876pt>
 File: ../Desktop/ER.jpg Graphic file (type jpg)
- <use ../Desktop/ER.jpg>
-Package pdftex.def Info: ../Desktop/ER.jpg used on input line 235.
+
+<use ../Desktop/ER.jpg>
+Package pdftex.def Info: ../Desktop/ER.jpg used on input line 316.
 (pdftex.def)             Requested size: 452.95958pt x 284.52298pt.
+ [24 <../Desktop/ER.jpg>]
+Chapter 7.
+[25
 
-[17 <../Desktop/ER.jpg>]
+] [26]
 Chapter 8.
-[18
+[27
 
-] [19]
-Chapter 9.
-[20
+] [28
 
-] [21
-
-] [22] (./DIsseration.aux)
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+] [29] (./DIsseration.aux)
 Package logreq Info: Writing requests to 'DIsseration.run.xml'.
 \openout1 = `DIsseration.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 6806 strings out of 495031
- 110220 string characters out of 6181530
+ 6839 strings out of 495031
+ 110535 string characters out of 6181530
  265892 words of memory out of 5000000
- 9934 multiletter control sequences out of 15000+600000
+ 9965 multiletter control sequences out of 15000+600000
  10838 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,9n,64p,1075b,1200s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,64p,1126b,1200s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -540,10 +556,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb>
-Output written on DIsseration.pdf (27 pages, 389562 bytes).
+Output written on DIsseration.pdf (34 pages, 512923 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 155 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

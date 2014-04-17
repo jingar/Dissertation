@@ -35,7 +35,7 @@ The main objectives of the new application are:
 \end{itemize}
 	
 \chapter{Literature Review}
-This section will cover the background literature consulted for this project. The literature that was consulted was focused on Expert locator systems. 
+This section will cover the background literature consulted for this project. The literature that was consulted was focused on Expert locator systems, Recommendation Systems and Ontologies. 
 
 Expert locator systems allow users to find experts in a particular area.
 This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. The areas that will be looked at are, what are the reasons for using expert systems, how users find experts without tools and different approaches to building an expert locator systems.
@@ -75,7 +75,7 @@ The system being built should emulate the first two stages and try to avoid the 
 
 \subsection{Traditional Approach}
 Many organisations contain roles which act as expertise or information locators.
-In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation, which served to bring relevant information to informations seekers. Other researchers have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person was looking for expertise, they would ask the expertise concierge about people who maybe be able to help them. The concierge will use their knowledge to suggest individuals that match the query.
+In Allen's(\citeyear{allen1977}) discussion he presented a highly linked role within an organisation, which served to bring relevant information to informations seekers. Other researchers have found similar roles within different types of organisations. \citeauthor{ehrlichcash1994}(\citeyear{ehrlichcash1994}) found what they called an \enquote{information mediator}, who because of his breadth of knowledge and interpretation skills was the go to person in case of any problems. They also noted that the information mediator was a critical part of the organisation. \citeauthor{mcdonalackerman1998}(\citeyear{mcdonalackerman1998}) found role that they called \enquote{expertise concierge}. The expertise concierge has the knowledge of who within the organisations knows what. When a person was looking for expertise, they would ask the expertise concierge about people who maybe be able to help them. The concierge will use their knowledge to suggest individuals that match the query.b 
 
 One way in which the previously stated roles can be emulated and automated is by building an expert database. Such an idea works by manually entering expertise data into the database, which can then be queried. The expert database will return a set of individuals that may be of help. Furthermore the expert database may return the individuals in a ranked list. Individuals higher up the list will be more likely to be of help. However such a system do have limitations \autocite{kobsaseid2003}.
 \begin{enumerate}
@@ -88,54 +88,37 @@ One way in which the previously stated roles can be emulated and automated is by
 \subsection{Contemporary Approach}
 In order to combat the limitations of the traditional approach the expert finding process can be further automated. This is done by automatically obtaining information on experts from many different sources and not relying solely on human sources \autocite{kobsaseid2003}. Using this method the experts do not need to update their profile manually and thus it is always up to date. 
 
-However this approach has many difficulties. Firstly it is can be difficult to find sources on which to judge the skill level of an expert in a particular area. An example source for scientist could be articles published but for artists this much more difficult as their work is more difficult to analyse. A common interdisciplinary source that can be used to within an organisation, are email communications. Emails can demonstrate expertise, as queries can be answered by the expert and communication patterns can help determine who has what knowledge with in the organisation \autocite{campbell2003}. However using such a source requires handling privacy concerns. 
-Even with a source of information it still difficult to determine the weight of the source. For example if a scientist co-authors an article does that make the scientist an expert in that area? Did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
+However this approach has many difficulties. Firstly it is can be difficult to find sources on which to judge the skill level of an expert in a particular area. An example source for scientist could be articles published but for artists this much more difficult as their work is more difficult to analyse. A common interdisciplinary source that can be used to within an organisation, are email communications. Emails can demonstrate expertise, as queries can be answered by the expert and communication patterns can help determine who has what knowledge with in the organisation \autocite{campbell2003}. This becomes particularly difficult to achieve within a non profit organisation where communication is private between volunteers and does not go through through an organisational email server. Furthermore using such a emails as source of information requires dealing with privacy issues.
+However even if a source of information was available it would still be difficult to determine the weight of the source. For example if a scientist co-authors an article does that make the scientist an expert in that area? Did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
 
+\subsection{Recommendation Systems}
+In the previous sections the techniques described are based on a user querying a system and getting back a result. These approaches rely on the system to make the decision on who the expert is. However it is easier and quicker for humans to make that decision when compared to a computer system. Thus it should be possible to let the users aid the system in the expert finding process. Furthermore the system should be able to use the history with the user in order to find a suitable expert. This system is known as a recommendation system. It is based on the idea of using information that other users have found and the evaluation they have made. It involves the user providing recommendation for an item.The recommendations can be anything from detailed review to simply a numerical score. The system then aggregates those recommendations, which are then used to the direct the item to the appropriate users. They can also be used to match recommender with those seeking recommendation. Furthermore the recommendation system can use previous history of the user in order to fine tune the recommendations.
+\\ 
+The recommendation system can complement the previously discussed systems. It is able to give the users extra information by showing them what experts have been recommended by other users. Furthermore the expert finder no longer has to decide if a user is an expert but rather only has to make sure if the expert is appropriate to the query.  However Resnick and Varian \autocite{resnick} noted several issues that must be considered when designing a recommendation system.
 
+\subparagraph{Volume}
+The volume of items that will be evaluated has to be considered. The process of recommendation has to match the volume of items. It may be possible to write detailed reviews and recommendations on restaurants however this not practical on momentary news article because they put an emphasis on quick distribution and evaluation.
+
+\subparagraph{Benefit and Cost}
+When designing a recommendation the domain of the system has to be considered for the following questions. Is it more costly to miss a good item that could be recommended to the user or to recommend an item that is a poor match to the user?. How do the benefits of finding a good match for the user compare to cost of mismatching the user with an item?. These questions will effect the design of the system. An example of this is within an medical recommendation system, where the cost of incorrect recommendation with be very costly. Thus this system has to be more accurate and more intelligent in its recommendations then a recommendation system for restaurants.
+
+\subparagraph{Consumers and Producers}
+The consumers and producers of the recommendation system have to be considered. What type of people produce the recommendation and consume them. How many consumers are their compared to the producers?. Do the produces evaluate similar products or do the products vary? Identifying the consumers and producers will help in deciding how to aggregate the recommendation. For example aggregating the recommendations by taste is more useful when the consumers and producers do not know each other. 
 %should be simple
 
-%projects people can search.
-%project page has title, description, goals, looking for who, comment section, links of people profile currently in the team
-\chapter{Requirements}
-The requirements of the project are prioritised in order to manage the project effectively. The most important requirements are given the tag High. These requirements must be completed before the end of the project. The next priority tag is Medium, any priorities with the Medium tag will be started only after the High tag requirements have been finished. While the Medium tag priorities are not essential, it is recommended that at least some if not all of them be implemented. Finally the least important requirements will be given the tag Low. These requirements are not needed for the main functionality and only provide extra features for convenience .
+\subparagraph{Social Implications}
+Once the user has identified the areas they are interested in, it easy to consume evaluations made by others and not contribute. Thus system must have some form of incentive to produce recommendations. Otherwise if not enough recommendations are made then system will not be used. However even if incentives are given it still possible for users to only give positive recommendations for their own items and negative recommendations for competitors.  Furthermore the system can be further "gamed" by a users offering monetary gains for giving their item positive recommendations. Therefore some methods should be in place to discourage this behaviour.
 
-\subsection{High Priority}
-\subsubsection{Search for Collaborators} 
-This is has been identified as the most important requirement. The users shall be able to search for collaborators in the database. The criteria for search shall be:
-\begin{description}
-	\item[Area of work:] The user must be able to search for collaborators in the database who are Artist or Scientists. Those areas will be further split into different types of Artists and Scientists. These must also be searchable.
-	\item[Location:] Search for collaborators in a particular city.
-	\item[Distance from user:] Search for collaborators with in a certain distance from the city the user is in. The user will not need to register to use this functionality.
-\end{description}
-	
-\subsubsection{Register and Log in} 
- User shall be able to register as member and customize their profile. To register the user must provide a first and last name as well choose a username and password. Once the user has registered they can then customize their profile. The profile shall contain the following items:
- \begin{itemize}
- \item first and last name (Required)
- \item age (optional)
- \item email (optional)
- \item Phone/Mobile number (optional)
- \item Biography (optional)
- \item Artistic and/or Scientific interest (optional)
- \item Profile Picture (optional)
- \item Extra pictures - in order to demonstrate some previous work (optional)
- \item External Links - in order to show previous work done, such as blogs and journal articles (optional)
- \end{itemize}
- The username and password provided will be used to login, which will allow the members to edit their profile.
- 	Members can only edit their own profiles. While only administrators can remove members, which in turn will also remove the profile.
+\subparagraph{Privacy}
+Recommendation systems may cause privacy concerns for their users. The more information the user has on a recommendation the better the evaluation on that recommendation. However users may not wish to share information about themselves and their habits. A solution to this, is to allow anonymous recommendations. However this does not entirely solve the problem as user may wish for a mix anonymity, as they may want to be rewarded for their recommendations but still maintain privacy. 
+\\
+\\
+In conclusion even though recommendation systems at first seem to complement expert finding systems their as still major issues that need to be addressed. Furthermore it should be noted that a recommendation system is not simply a sub system that is part of an expert finding system but in its self a large stand alone system. Thus combining the two will have implications on the complexity of the system as well as the time taken to develop it. This factor as well as previous discussed factors have to be addressed in order for the combination of systems to be successful.
 
-\subsubsection{High usability} 
-This as been given a high priority as an application with high usability and consistent design will attract more users. Even with a functional application, in order to for the application to be successful and help collaboration, the user must find it intuitive and easy to use.
-\subsection{Medium Priority}
-\subsubsection{Map visualization}
-This feature allows users to visually see the location of members in a map. The map will show icons representing members on map. The dots will become bigger as more members are in a particular area. There should be a zoom functionality, as the user zooms in the more detailed density of the members becomes clear. This is likely to be the most difficult requirement and is likely to scoped down in order to be manageable with in the project deadlines.
-\subsubsection{Projects}
-This feature will allow members to create projects, that users can search for. The project should have a Title, description,images to demonstrate ideas, goals and what skills are required. The original member to start the project, can edit the project and delete the project. There will be a comment section for each project allowing members to give feedback and ask questions. Administrator can only delete the project.
-\subsection{Low Priority}
-\subsubsection{Forum}
-User will have the standard forum functionality available . Users will be able to create threads and post comments. Moderators maybe assigned with the chosen privileges. 
-
+\section{Conclusion}
+Through the research carried out on expertise finding systems as well as recommendations system knowledge was gained into the system designs. By 
 \chapter{Technology Analysis}
+This chapter will look at the major technologies that will used within this project. This analysis is based of the initial requirements. 
 \section{Database}
 The database will be used to store user details such as log in and password as well as the users information displayed on the users profile.
 \subsection{MySQL}
@@ -170,6 +153,135 @@ SimpleTest is another unit testing framework with the focus on simplicity. Simpl
 While SimpleTest and PHPUnit offer similar in features in terms of creating tests and automatically running them. PHPUnit is better maintained thus easier to find documentations and help with issues should any arise. 
 
 
+\chapter{Project Methodology}
+This section will describe and justify the development methodology that was used in this project. It will also describe how user feedback was gained through prototyping and questionnaires.
+
+\subsection{Development Methodology} 
+Due the user centric nature of the project, it was best to use iterative development and avoid the traditional waterfall methodology. By Using iterative development, the project focused on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype was constantly improved as more feedback was obtained.
+
+The use iterative development helped manage the unpredictable nature of working with users. It helped as it was flexible to adapt to any changes needed by the users. Furthermore, due to continually prototyping and implementing small parts, the user would still have some functionality even if the project could not be finished. If the waterfall methodology was adopted and significant difficulties were encountered, it would have been likely that project would not finish and have no functionality implemented at all. 
+Lastly any issues regarding requirements or user interface design could be solved early on in the development process. If the waterfall method was used  and their were issues with requirements and/or user interface it would take significant time in order to correct the issues.
+
+In conclusion many of the problems  encountered when developing interactive software were dealt with by the use of iterative development. 
+\pagebreak
+\subsection{Detailing Iterative Development}
+When using iterative development, the requirements of a project develop over time during each iteration. Thus it is not appropriate to report the requirements as whole as it does not show the evolution of the system and does not clearly show the need of the users at each stage of the iteration. Furthermore it does not show how the system was changed based on the feedback received. A more common and valuable approach is to to report the details of each iteration separately. The details will include what was done at each iteration, what feedback was gained from the previous iteration and how it affected the current iteration. By using this approach a clear evolution of the project can been, which will act as document to describe how the final release version was reached. However a full summary is still available in the appendices which states the full requirements and their final status.
+ 
+\subsection{Testing Strategy}
+Their are many different methods that can be used to test software and to ensure the program operates correctly. This chapter describes the testing strategy employed in this project to achieve validation and verification of this web application.
+\\
+\\
+Validation of an application describes if the application does what the user wants. While verification describes if the the application matches its specification. In order to ensure that was the web application was thoroughly tested both white box and black box testing methodologies were used.
+\\
+\\
+The black box testing methodology focuses on checking if the functionality operates correctly i.e. Does the code take in an input and give the correct output. While white box testing methodology looks at the code internally in order to determine if the code operates correctly.
+\\
+\\
+The following testing strategies were used, unit testing, integration testing and acceptance testing.
+\subparagraph{Unit Testing}
+Unit testing involves testing individual components and objects which make up the system. Each object or component is an individual unit which needs no other objects in order to operate. For unit testing black box testing methodology was used. Black box testing is much less time intensive than white box testing and thus suited this fixed time scale project more appropriately.
+\\
+PHPUnit unit testing framework was used in order to automate the process and produce formal results for each individual unit. However PHPUnit works well when the the units being tested does not interact with outside units such as a database. For example the registration process in involves validating and inserting the user data into the database. While the validation components can be tested independently, manually testing is need to ensure that correct data is entered into the database. Since this project is primarily focused on manipulating the database thus this type of testing was only useful in a limited scope.
+%projects people can search.
+%project page has title, description, goals, looking for who, comment section, links of people profile currently in the team
+
+\subparagraph{Integration Testing}
+This type of testing was carried out when a new functionality was added. The unit tests for previously added functionality were run as well as the new functionality was tested manually using test data. Furthermore any previously added functionalities that did not have unit tests, were also manually in order to ensure previous functionality had not broken. This type of testing was quite time intensive and after consideration, a framework should have been chosen to automate this type of testing.
+
+\subparagraph{Alpha Testing}
+The alpha testing was carried out by a single student at Heriot-Watt University. The purpose of this testing was to put the web application under the stress of a normal user. Though the student was using the application normally, the student was asked to intentionally attempt to break functionality. By doing this the testing would give a large coverage and unveil subtle bugs. This testing was very successful as it unveiled many critical bugs.
+
+\chapter{First Iteration}
+This chapter explains process by which the first initial prototype was created. The first prototype created was a concept prototype i.e. their were no implementations of it. As this was the first iteration, it was mainly focused on gathering requirements and focusing on the user interface of the prototype.
+
+\subsection{Requirements}
+The requirements of the project were gathered by speaking to the client and then prioritised order to manage the project effectively. The most important requirements were given the tag High. These requirements must have been completed before the end of the project. The next priority tag was the Medium tag, any priorities with the Medium tag must be started only after the High tag requirements have been finished. While the Medium tag priorities were not essential, it was recommended that at least some if not all of them should be implemented. Finally the least important requirements were given the tag Low. These requirements were not needed for the main functionality and only provided extra features for convenience.
+
+\subsection{High Priority}
+\subsubsection{Search for Collaborators} 
+This is has been identified as the most important requirement. The users shall be able to search for collaborators in the database. The criteria for search shall be:
+\begin{description}
+	\item[Area of work:] The user must be able to search for collaborators in the database who are Artist or Scientists. Those areas will be further split into different types of Artists and Scientists. These must also be searchable.
+	\item[Location:] Search for collaborators in a particular city.
+	\item[Distance from user:] Search for collaborators with in a certain distance from the city the user is in. The user will not need to register to use this functionality.
+\end{description}
+	
+\subsubsection{Register and Log in} 
+ User shall be able to register as member and customize their profile. To register the user must provide a first and last name as well choose a user name and password. Once the user has registered they can then customize their profile. The profile shall contain the following items:
+ \begin{itemize}
+ \item first and last name (Required)
+ \item age (optional)
+ \item email (optional)
+ \item Phone/Mobile number (optional)
+ \item Biography (optional)
+ \item Artistic and/or Scientific interest (optional)
+ \item Profile Picture (optional)
+ \item Extra pictures - in order to demonstrate some previous work (optional)
+ \item External Links - in order to show previous work done, such as blogs and journal articles (optional)
+ \end{itemize}
+ The username and password provided will be used to login, which will allow the members to edit their profile.
+ 	Members can only edit their own profiles. While only administrators can remove members, which in turn will also remove the profile.
+
+\subsubsection{High usability} 
+This as been given a high priority as an application with high usability and consistent design will attract more users. Even with a functional application, in order to for the application to be successful and help collaboration, the user must find it intuitive and easy to use.
+\subsection{Medium Priority}
+\subsubsection{Map visualization}
+This feature allows users to visually see the location of members in a map. The map will show icons representing members on map. The dots will become bigger as more members are in a particular area. There should be a zoom functionality, as the user zooms in the more detailed density of the members becomes clear. This is likely to be the most difficult requirement and is likely to scoped down in order to be manageable with in the project deadlines.
+\subsubsection{Projects}
+This feature will allow members to create projects, that users can search for. The project should have a Title, description,images to demonstrate ideas, goals and what skills are required. The original member to start the project, can edit the project and delete the project. There will be a comment section for each project allowing members to give feedback and ask questions. Administrator can only delete the project.
+\subsection{Low Priority}
+\subsubsection{Forum}
+User will have the standard forum functionality available . Users will be able to create threads and post comments. Moderators maybe assigned with the chosen privileges. 
+\section{Design}
+The design of the system was split into two parts. The prototype which would show how the user interface would look and how the user would interact with it. The back end design which describe how all the features would be implemented and how the database architecture would be designed. The design are explained below.
+\subsection{User Interface}
+The requirements detailed the system to be highly usable, which meant it was important that the user interface was intuitive, simple and aesthetically pleasing. However as this was an initial prototype and low fidelity, this meant that the aim was of the first prototype was to focus on intuitiveness and simplicity.
+
+Though many prototyping applications were available, Lumzy was chosen because it offered all the important features and it was free. Though alternative would have been to use paper prototyping, it would have been much more difficult to maintain.
+\subsubsection{Search Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{People.jpg}
+\caption{Search Page}
+\end{figure}
+This interface design is for allowing users to search for collaborators. The search bars allow the users to search by area of work, location and radius of the location.
+Once the search is completed, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and first few words of their biography shown. The far right hand side shows popular areas in which members have claimed they have expertise in.
+\pagebreak
+
+\subsubsection{Profile Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{Profile.jpg}
+\caption{Profile Page}
+\end{figure}
+
+The figure above shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
+
+
+The profile contains useful information that other users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
+
+On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the registered member is appropriate for collaboration.
+\pagebreak
+
+\subsubsection{Home Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{Homepage.jpg}
+\caption{Home Page}
+\end{figure}
+
+The figure above shows the home page for the application. The purpose of this page is to introduce the user to the application as well as act as marketing tool to new users. This page should be aesthetically pleasing and contain information to hook the user in and use the application. The carousel acts as navigation tool as well as gives the user knowledge of what is available on this site quickly.
+\pagebreak
+
+\subsubsection{Log in}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm]{Log_in.jpg}
+\caption{Log in Page}
+\end{figure}
+
+The above figure shows very standard log in page.Thought not shown in the figure, this page will also show error message when the user name and/or password is incorrect.
+
 \chapter{Risks Assessment}
  	This section will give an an overview of the potential risks to project development.
 \begin{center}
@@ -192,40 +304,9 @@ Users find the system unusable & Moderate & High & Follow user centred design ap
 \label{tab:xyz}
     \end{table}
     \end{center}
-\chapter{Methodology}
-Due the user centric nature of the of project, it is best to use iterative development and avoid the traditional waterfall methodology. The waterfall methodology is not suited for this project as it does not involve users as much as required for high user interaction projects. 
 
-Using iterative development, this project will focus on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype will be continually improved as more feedback is obtained.
 
-By using iterative development , the unpredictable nature of working users can be managed. Due to continually prototyping and implementation small parts, the user will still have some functionality even if the project cannot be finished. If the waterfall methodology was used and significant difficulties were encountered, it is likely the project would not finish and have no functionality implemented at all. 
 
-Any issues regarding requirements or user interface design can be solved early on in the development process. Using the waterfall method it would too late to go back and make changes to the design, if there were any misunderstandings in the requirements.
-In conclusion many of the problems in encountered when developing interactive software can be dealt with using iterative development. 
-
-\chapter{Initial Design}
-\section{Initial User Interface Design}
-This section will give an overview of the user interface prototypes created so far. There purpose is to get initial feedback on the interface of the main requirements.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth,height=10cm]{../Desktop/Search.jpg}
-\caption{Search Page}
-\end{figure}
-This interface design is for allowing users to search for collaborators. The search bars allow the users to search by area of work, location and radius of the location.
-Once the search is completed, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and first few words of their biography shown. The far right hand side shows popular areas in which members have claimed they have expertise in
-\\
-\\
-The figure below shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth,height=10cm]{../Desktop/Profile.jpg}
-\caption{Profile Page}
-\end{figure}
-The profile contains useful information that other users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
-
-On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the registered member is appropriate for collaboration.
-\newpage
 
 \section{Initial Database Design}
 In order for the database design to reflect the requirements, it is important to identify the separate entities with in the requirements. Three entities were identified, member who has registered, the member's profile and areas of expertise the user has. The figure below shows the relation ship between the entities.
@@ -240,6 +321,7 @@ The relationship between an member and his/her profile is a one-to-one. Each mem
 Every member has many expertise and many expertise can be shared by many members. Thus we have a many-to-many relationship between member and expertise areas. However the member table is used to keep log in information thus the expertise table has a relationship with the profile, since the profile is used to display the profile in web application.
 
 In order for the many-to-many relationship to be implemented it must require an intermediate table. The profile/expertise table will act as link between the profile and expertise table. It will use an composite primary key consisting of the primary key from the profile table and the primary key from the expertise table.
+
 \chapter{Initial Evaluation and Testing Strategy}
 This chapter describes the plan for testing and evaluating the system.
 \section{System Evaluation}
@@ -256,9 +338,9 @@ Rather than testing being a separate phase in development, it will be integrate 
 
 Using the automated test framework, this allows us to carry out integration testing as well. As development progress, tests can be run after the integration of different parts of the application. If the integration causes any unforeseen, bugs the automatic testing should signal a problem. This way the bugs can be caught early on when integrating and thus in theory the system should be bug free throughout the development.
 
-Due to the unpredictable nature of users, it is impossible to foresee all potential problems with the system and test for them. Thus it is important to carry out testing involving the users before releasing  the final system. After all features that are to be implemented have been finished the beta testing will begin. The system will be released to a subset of the users and the users will be given an email address to which they can send there issues. The issues will be prioritised and the highest priority issues will be dealt with first.
+It is impossible to foresee all potential problems with the system and test for them. Thus it is important to carry out testing involving the users before releasing  the final system. After all features that are to be implemented have been finished the beta testing will begin. The system will be released to a subset of the users and the users will be given an email address to which they can send there issues. The issues will be prioritised and the highest priority issues will be dealt with first.
 
-Sample data will be added in order to typical use of some features e.g. sample profiles will be added so the searching functionality can be used. It is likely that this testing will happen for a short and fixed amount of time due to the static deadlines.
+Sample data will be added in order to typical use of some features e.g. sample profiles will be added so the searching functionality can be used. It is likely that this testing will happen for a short and fixed amount of time due to the static deadlines.	
 \chapter{Project Plan}
 A high level plan below describes the key tasks to be achieved.
 \begin{center}

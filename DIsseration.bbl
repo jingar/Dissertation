@@ -254,6 +254,45 @@
   \field{urlyear}{2013}
 \endentry
 
+\entry{resnick}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Resnick}{R.}%
+     {Paul}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Varian}{V.}%
+     {Hal~R.}{H.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{RPVHR1}
+  \strng{fullhash}{RPVHR1}
+  \field{labelyear}{1997}
+  \field{sortinit}{R}
+  \verb{doi}
+  \verb 10.1145/245108.245121
+  \endverb
+  \field{issn}{0001-0782}
+  \field{number}{3}
+  \field{pages}{56\bibrangedash 58}
+  \field{title}{Recommender Systems}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/245108.245121
+  \endverb
+  \field{volume}{40}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{Commun. ACM}
+  \field{month}{03}
+  \field{year}{1997}
+\endentry
+
 \entry{kobsaseid2003}{article}{}
   \name{author}{2}{}{%
     {{}%
