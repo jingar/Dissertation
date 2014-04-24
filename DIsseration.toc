@@ -70,11 +70,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Project Methodology}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.4}Development Methodology}{13}
+\contentsline {section}{\numberline {4.1}Development Methodology}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.5}Detailing Iterative Development}{14}
+\contentsline {section}{\numberline {4.2}Detailing Iterative Development}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.6}Testing Strategy}{14}
+\contentsline {section}{\numberline {4.3}Testing Strategy}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Unit Testing}{14}
 \defcounter {refsection}{0}\relax 
@@ -82,48 +82,122 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Alpha Testing}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}First Iteration}{16}
+\contentsline {section}{\numberline {4.4}Questionnaires}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.0.7}Requirements}{16}
+\contentsline {chapter}{\numberline {5}First Iteration}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.0.8}High Priority}{16}
+\contentsline {section}{\numberline {5.1}Requirements}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Search for Collaborators}{16}
+\contentsline {subsection}{\numberline {5.1.1}High Priority}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Register and Log in}{17}
+\contentsline {subsubsection}{Search for Collaborators}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{High usability}{17}
+\contentsline {subsubsection}{Register and Log in}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.0.9}Medium Priority}{18}
+\contentsline {subsubsection}{High usability}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Map visualization}{18}
+\contentsline {subsection}{\numberline {5.1.2}Medium Priority}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Projects}{18}
+\contentsline {subsection}{\numberline {5.1.3}Responsive Design}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.0.10}Low Priority}{18}
+\contentsline {subsubsection}{Map visualization}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Forum}{18}
+\contentsline {subsubsection}{Projects}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Design}{18}
+\contentsline {subsection}{\numberline {5.1.4}Low Priority}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}User Interface}{18}
+\contentsline {subsubsection}{Forum}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Search Page}{19}
+\contentsline {section}{\numberline {5.2}Design}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Profile Page}{20}
+\contentsline {subsection}{\numberline {5.2.1}Front End}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Home Page}{21}
+\contentsline {subsubsection}{Search Page}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Log in}{22}
+\contentsline {subsubsection}{Profile Page}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Risks Assessment}{23}
+\contentsline {subsubsection}{Home Page}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Initial Database Design}{24}
+\contentsline {subsubsection}{Log in}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Initial Evaluation and Testing Strategy}{25}
+\contentsline {subsection}{\numberline {5.2.2}Middleware}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}System Evaluation}{25}
+\contentsline {subsubsection}{Database Class}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}System Testing Strategy}{26}
+\contentsline {subsubsection}{Utility Classes}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Project Plan}{27}
+\contentsline {subparagraph}{Input}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Session}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Hash}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Sanitize}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Redirect}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Token}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Registration, Login and Logout}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Back End}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Testing and Evaluation}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Second Iteration}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Requirements}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Design}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Front End}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Responsive Design}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Search Page}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Profile Page}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Edit Profile Page}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Show Work Sample Page}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Add Work Sample Page}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Registration Page}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Front End Validation}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Middleware}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Middleware Validation}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Add Work Samples and Show Work Samples}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Email Verification}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Edit Profile}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Back End}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Testing and Evaluation}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Third Iteration}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Design}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}Front End}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Responsive Design}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Work Type - Edit profile}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Middleware}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.3}Back End}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Testing and Evaluation}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Risks Assessment}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Project Plan}{48}
