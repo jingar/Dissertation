@@ -12,7 +12,7 @@
 \usepackage{epstopdf}
 \usepackage{listings}
 \usepackage{color}
-
+\usepackage{appendix}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
@@ -36,7 +36,7 @@
 \addbibresource{references.bib}
 \begin{document}
 \title{ASCUS - Collaboration Finder}
-\author{Saad Arif\\ Marticulation Number: H00011110 \\Fourth Year Dissertation - First Deliverable \\ Supervisor: Ruth Aylett \\ Second Reader: Patricia Vargas}
+\author{Saad Arif\\ Marticulation Number: H00011110 \\Final Dissertaion \\ Supervisor: Ruth Aylett \\ Second Reader: Patricia Vargas}
 \maketitle
 \pagestyle{empty} %get rid of header/footer for toc page
 \tableofcontents %put toc in
@@ -50,22 +50,50 @@
 \pagestyle{plain} % put headers/footers back on
 \setcounter{page}{1} %reset the page counter
 
+
+\chapter*{Declaration}%
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}%
+I, Saad Arif, Confirm that this work submitted for assessment is my own and is expressed in my own 
+words. Any uses made within it of the works of other authors in any form (e.g., ideas, equations, figures, 
+text, tables, programs) are properly acknowledged at any point of their use. A list of the references 
+employed is included. 
+ 
+Signed: 
+ 
+Date:
+
+\chapter*{Abstract}%
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}%
+ASCUS is a non profit volunteer organisation, whose purpose is to support collaboration between artists and scientists. The aim of this project was to develop an application that would help artists and scientist to find collaboration opportunities.  The application was developed using iterative development, where a series of prototypes were produced and continually updated through a series of iterations. Questionnaires were used to evaluate the prototypes and the final product. The result of the final questionnaire showed that the application produced was fit for purpose and the project had met its original aims.
+\chapter*{Acknowledgements}%
+\addcontentsline{toc}{chapter}{\numberline{}Acknowledgements}%
+I would like to give thanks to a number of people that have given me help and support through this dissertation. 
+\begin{itemize}
+ \item Professor Ruth Aylett, my supervisor for her help with the planning and structure of this document, along with valuable feedback and support throughout the development of the project. 
+  \item Professor Patricia Vargas, for her constructive feedback as a second reader for this project. 
+  \item My parents for their continued support and encouragement through out my project.
+\end{itemize}
+
+
+
 \chapter{Introduction}
 ASCUS(Art Science Collaborative) is a non profit volunteer organisation that is made up of a network of artists and scientists who are looking for interdisciplinary collaboration. ASCUS' aim is to advocate and facilitate improved art science collaboration and science communication \autocite{ascus}. However ASCUS does not have any tools  to meet such aims. Currently ASCUS has a single static site which provides information on past events as well as information on the organisation. This site allows users who wish to participate in collaboration to get initial ideas about the organisation and how to get involved. However the site does not actually help to find potential collaboration opportunities. Thus in order to advocate and facilitate collaboration it must be possible for members of ASCUS to have a central location where they can easily and quickly find collaboration opportunities. This project will focus on implementing a application that will allow ASCUS to meet its aims of art and science collaboration.
-\section{Aims and Objectives}
+
+\pagebreak
+\section{Aims and Objectives} 	
 The aim of this project is to develop a web application in order to allow artists and scientists to find collaboration opportunities.
-The main objectives of the new application are:
+The main objectives of the project were:
 \begin{itemize}
-	\item Develop a web application that will reduce work load on artists and scientists when looking for collaboration opportunities.
-	\item Develop facilities that allow artists and scientists to discuss ideas for collaborations.
+	\item Develop a web application that will make it easier for artists and scientists to find collaboration partners and as well as collaboration opportunities.
 	\item The application should be designed in a way that allows both artists and scientists to use it effectively.
+	\item The application developed should be a solid foundation, upon which future work in finding collaboration opportunities can be built.
 \end{itemize}
 	
 \chapter{Literature Review}
-This section will cover the background literature consulted for this project. The literature that was consulted was focused on Expert locator systems, Recommendation Systems and Ontologies. 
+This section will cover the background literature consulted for this project. The literature consulted was focused on Expert locator systems, Recommendation Systems. 
 
 Expert locator systems allow users to find experts in a particular area.
-This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. The areas that will be looked at are, what are the reasons for using expert systems, how users find experts without tools and different approaches to building an expert locator systems.
+This project is focused on building a subset of an expert locator system, that is focused on facilitating the ability to find collaboration opportunities. The areas that will be looked at are, what are the reasons for using expert systems, how users find experts without tools , the different approaches to building an expert locator systems and how recommendation systems can complement expert locator systems.
 \section{Organisational need for Expert locator}
 Many organisations have identified the need to locate knowledgeable individuals within there organisations. It is important for organisations to effectively use their knowledge in order to enable organisational learning, providing better technical assistance and creating teams to deal with critical situations among other goals  \autocite{ackerman2003sharing}. Furthermore an organisation may end up "reinventing the wheel" even though a solution had already been made for a similar problem before. Thus it becomes necessary to catalogue skills and expertise of individuals, who knows what,  in way that it can later be queried \autocite{fernandez2000}.
 
@@ -119,7 +147,7 @@ However this approach has many difficulties. Firstly it is can be difficult to f
 However even if a source of information was available it would still be difficult to determine the weight of the source. For example if a scientist co-authors an article does that make the scientist an expert in that area? Did both authors equally contribute to the article?. Such questions are difficult to answer without further information and if sources are not properly weighted then it is more likely for incorrect experts to be identified.
 
 \subsection{Recommendation Systems}
-In the previous sections the techniques described are based on a user querying a system and getting back a result. These approaches rely on the system to make the decision on who the expert is. However it is easier and quicker for humans to make that decision when compared to a computer system. Thus it should be possible to let the users aid the system in the expert finding process. Furthermore the system should be able to use the history with the user in order to find a suitable expert. This system is known as a recommendation system. It is based on the idea of using information that other users have found and the evaluation they have made. It involves the user providing recommendation for an item.The recommendations can be anything from detailed review to simply a numerical score. The system then aggregates those recommendations, which are then used to the direct the item to the appropriate users. They can also be used to match recommender with those seeking recommendation. Furthermore the recommendation system can use previous history of the user in order to fine tune the recommendations.
+In the previous sections the techniques described are based on a user querying a system and getting back a result. These approaches rely on the system to make the decision on who the experts are. However it is easier and quicker for humans to make that decision when compared to a computer system. Thus it should be possible to let the users aid the system in the expert finding process. Furthermore the system should be able to use the history with the user in order to find a suitable expert. This system is known as a recommendation system. It is based on the idea of using information that other users have found and the evaluation they have made. It involves the user providing recommendation for an item.The recommendations can be anything from detailed review to simply a numerical score. The system then aggregates those recommendations, which are then used to the direct the item to the appropriate users. They can also be used to match recommender with those seeking recommendation. Furthermore the recommendation system can use previous history of the user in order to fine tune the recommendations.
 \\ 
 The recommendation system can complement the previously discussed systems. It is able to give the users extra information by showing them what experts have been recommended by other users. Furthermore the expert finder no longer has to decide if a user is an expert but rather only has to make sure if the expert is appropriate to the query.  However Resnick and Varian \autocite{resnick} noted several issues that must be considered when designing a recommendation system.
 
@@ -127,23 +155,72 @@ The recommendation system can complement the previously discussed systems. It is
 The volume of items that will be evaluated has to be considered. The process of recommendation has to match the volume of items. It may be possible to write detailed reviews and recommendations on restaurants however this not practical on momentary news article because they put an emphasis on quick distribution and evaluation.
 
 \subparagraph{Benefit and Cost}
-When designing a recommendation the domain of the system has to be considered for the following questions. Is it more costly to miss a good item that could be recommended to the user or to recommend an item that is a poor match to the user?. How do the benefits of finding a good match for the user compare to cost of mismatching the user with an item?. These questions will effect the design of the system. An example of this is within an medical recommendation system, where the cost of incorrect recommendation with be very costly. Thus this system has to be more accurate and more intelligent in its recommendations then a recommendation system for restaurants.
+When designing a recommendation the domain of the system has to be considered for the following questions. Is it more costly to miss a good item that could be recommended to the user or to recommend an item that is a poor match to the user? How do the benefits of finding a good match for the user compare to cost of mismatching the user with an item?. These questions will effect the design of the system. An example of this is within an medical recommendation system, where the cost of incorrect recommendation with be very costly. Thus this system has to be more accurate and more intelligent in its recommendations then a recommendation system for restaurants.
 
 \subparagraph{Consumers and Producers}
-The consumers and producers of the recommendation system have to be considered. What type of people produce the recommendation and consume them. How many consumers are their compared to the producers?. Do the produces evaluate similar products or do the products vary? Identifying the consumers and producers will help in deciding how to aggregate the recommendation. For example aggregating the recommendations by taste is more useful when the consumers and producers do not know each other. 
+The consumers and producers of the recommendation system have to be considered. What type of people produce the recommendation and consume them. How many consumers are their compared to the producers? Do the producers evaluate similar products or do the products vary? Identifying the consumers and producers will help in deciding how to aggregate the recommendation. For example aggregating the recommendations by taste is more useful when the consumers and producers do not know each other. 
 %should be simple
 
 \subparagraph{Social Implications}
 Once the user has identified the areas they are interested in, it easy to consume evaluations made by others and not contribute. Thus system must have some form of incentive to produce recommendations. Otherwise if not enough recommendations are made then system will not be used. However even if incentives are given it still possible for users to only give positive recommendations for their own items and negative recommendations for competitors.  Furthermore the system can be further "gamed" by a users offering monetary gains for giving their item positive recommendations. Therefore some methods should be in place to discourage this behaviour.
 
 \subparagraph{Privacy}
-Recommendation systems may cause privacy concerns for their users. The more information the user has on a recommendation the better the evaluation on that recommendation. However users may not wish to share information about themselves and their habits. A solution to this, is to allow anonymous recommendations. However this does not entirely solve the problem as user may wish for a mix anonymity, as they may want to be rewarded for their recommendations but still maintain privacy. 
+Recommendation systems may cause privacy concerns for their users. The more information the user has on a recommendation, the better the evaluation on that recommendation. However users may not wish to share information about themselves and their habits. A solution to this, is to allow anonymous recommendations. However this does not entirely solve the problem as user may wish for a mixture of anonymity, as they may want to be rewarded for their recommendations but still maintain privacy. 
 \\
 \\
 In conclusion even though recommendation systems at first seem to complement expert finding systems their as still major issues that need to be addressed. Furthermore it should be noted that a recommendation system is not simply a sub system that is part of an expert finding system but in its self a large stand alone system. Thus combining the two will have implications on the complexity of the system as well as the time taken to develop it. This factor as well as previous discussed factors have to be addressed in order for the combination of systems to be successful.
 
-\section{Conclusion}
-Through the research carried out on expertise finding systems as well as recommendations system knowledge was gained into the system designs. By 
+. 
+
+
+\chapter{Project Methodology}
+This section will describe and justify the development methodology that was used in this project. It will also describe how user feedback was gained through prototyping and questionnaires.
+
+\section{Development Methodology} 
+Due to the user centric nature of the project, it was best to use iterative development and avoid the traditional waterfall methodology. By Using iterative development, the project focused on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype was constantly improved as more feedback was obtained.
+
+The use of iterative development can manage the unpredictable nature of software development. It is flexible to adapt to any changes needed by the users. Furthermore, due to continually prototyping and implementing small parts, the user would still have some functionality even if the project could not be finished. If the waterfall methodology was adopted and significant difficulties were encountered, it would have been likely that project would not finish and have no functionality implemented at all. 
+Lastly any issues regarding requirements or user interface design can be solved early on in the development process. If the waterfall method was used and there were issues with requirements and/or user interface it would take significant time in order to correct the issues.
+
+In conclusion many of the problems  encountered when developing interactive software were dealt with by the use of iterative development. 
+\pagebreak
+\section{Detailing Iterative Development}
+When using iterative development, the requirements of a project develop over time during each iteration. Thus it is not appropriate to report the requirements as whole as it does not show the evolution of the system and does not clearly show the need of the users at each stage of the iteration. Furthermore it does not show how the system was changed based on the feedback received. A more common and valuable approach is to report the details of each iteration separately. The details will include what was done at each iteration, what feedback was gained from the previous iteration and how it affected the current iteration. By using this approach a clear evolution of the project can been seen and will act as document to describe how the final release version was reached. However a full summary is of the requirements are still available in the appendix A.1, which states the full requirements and their final status.
+ 
+\section{Testing Strategy}
+Their are many different methods that can be used to test software and to ensure the program operates correctly. This chapter describes the testing strategy employed in this project to achieve validation and verification of this web application.
+\\
+\\
+Validation of an application describes if the application does what the user wants. While verification describes if the the application matches its specification. In order to ensure that was the web application was thoroughly tested both white box and black box testing methodologies were used.
+\\
+\\
+The black box testing methodology focuses on checking if the functionality operates correctly i.e. Does the code take in an input and give the correct output. While white box testing methodology looks at the code internally in order to determine if the code operates correctly.
+\\
+\\
+The following testing strategies were used, unit testing, integration testing and acceptance testing.
+\subparagraph{Unit Testing}
+Unit testing involves testing individual components which make up the system. Each object or component is an individual unit which needs no other components in order to operate. For unit testing black box testing methodology was used. Black box testing is much less time intensive than white box testing and thus is suited to this fixed time scale project.
+\\
+PHPUnit unit testing framework was used in order to automate the process and produce formal results for each individual unit. However PHPUnit works well when the the units being tested does not interact with outside units such as a database. For example the registration process in involves validating and inserting the user data into the database. While the validation components can be tested independently, manually testing is need to ensure that correct data is entered into the database. Since this project is primarily focused on manipulating the database thus this type of testing was only useful in a limited scope.
+%projects people can search.
+%project page has title, description, goals, looking for who, comment section, links of people profile currently in the team
+
+\subparagraph{Integration Testing}
+This type of testing was carried out when a new functionality was added. The unit tests for previously added functionality were run as well as the new functionality was tested manually using test data. Furthermore any previously added functionalities that did not have unit tests, were also manually in order to ensure previous functionality had not broken. This type of testing was quite time intensive and after consideration, a framework should have been chosen to automate this type of testing.
+
+\subparagraph{Alpha Testing}
+The alpha testing was carried out by a single student at Heriot-Watt University. The purpose of this testing was to put the web application under the stress of a normal user. Though the student was using the application in standard manner, the student was asked to intentionally attempt to break functionality. By doing this, the testing would give a large coverage on the code base and unveil subtle bugs. This testing was very successful as it unveiled many critical bugs.
+\pagebreak
+\section{Questionnaires}
+As this project is user focused, it was important to keep the users of the system involved at all stages of development. The success of the project depends of on how effectively the users can use the web application. However ASCUS is large organisation with a large number of member, this meant that it was not possible to use interviews a form of feedback. Thus in order to get a large number of opinions quickly, questionnaires were used.
+
+Two questionnaires were used. The first questionnaire was used get information on what the users were interested in getting out of the web application. It was also used to asses parts of the initial prototype such as the search functionality. The second questionnaire was used at the end of development in order to get a final evaluation on the web application. This was directly focused on its usability and involved user completing common tasks using the web application and answering questions on how easy it was to complete the tasks.
+
+In order to ensure questionnaires were of high quality, they were piloted to a set of subjects. The subjects were not part of ASCUS and could only verify that the questions asked covered the desired topics and were easy to understand.
+
+The results of questionnaires are discussed is in the testing and evaluation section of the first and third iteration chapters respectively.
+
+
 \chapter{Technology Analysis}
 This chapter will look at the major technologies that will used within this project. This analysis is based of the initial requirements. 
 \section{Database}
@@ -177,57 +254,10 @@ PHPUnit is the standard unit testing framework that is included in many PHP fram
 SimpleTest is another unit testing framework with the focus on simplicity. SimpleTest is not well maintained with last update over a year ago. SimpleTest does offer the ability to run tests in a web browser thus not needing a terminal, which can be useful when working on a remote web server.Furthermore adding SimpleTest to a project is easy as simply using the include command in a PHP script. While many tutorials are available for SimpleTest, many of them are over a year old. Eclipse IDE offers a SimpleTest plugin.
 
 \subsection{Conclusion}
-While SimpleTest and PHPUnit offer similar in features in terms of creating tests and automatically running them. PHPUnit is better maintained thus easier to find documentations and help with issues should any arise. 
+While SimpleTest and PHPUnit offer similar in features in terms of creating tests and automatically running them. PHPUnit is better maintained thus easier to find documentations and help with issues should any arise.
 
-
-\chapter{Project Methodology}
-This section will describe and justify the development methodology that was used in this project. It will also describe how user feedback was gained through prototyping and questionnaires.
-
-\section{Development Methodology} 
-Due the user centric nature of the project, it was best to use iterative development and avoid the traditional waterfall methodology. By Using iterative development, the project focused on cycles of prototyping small parts of the project, implementing the prototype and finally getting feedback. The original prototype was constantly improved as more feedback was obtained.
-
-The use iterative development helped manage the unpredictable nature of working with users. It helped as it was flexible to adapt to any changes needed by the users. Furthermore, due to continually prototyping and implementing small parts, the user would still have some functionality even if the project could not be finished. If the waterfall methodology was adopted and significant difficulties were encountered, it would have been likely that project would not finish and have no functionality implemented at all. 
-Lastly any issues regarding requirements or user interface design could be solved early on in the development process. If the waterfall method was used  and their were issues with requirements and/or user interface it would take significant time in order to correct the issues.
-
-In conclusion many of the problems  encountered when developing interactive software were dealt with by the use of iterative development. 
-\pagebreak
-\section{Detailing Iterative Development}
-When using iterative development, the requirements of a project develop over time during each iteration. Thus it is not appropriate to report the requirements as whole as it does not show the evolution of the system and does not clearly show the need of the users at each stage of the iteration. Furthermore it does not show how the system was changed based on the feedback received. A more common and valuable approach is to report the details of each iteration separately. The details will include what was done at each iteration, what feedback was gained from the previous iteration and how it affected the current iteration. By using this approach a clear evolution of the project can been, which will act as document to describe how the final release version was reached. However a full summary is still available in the appendices which states the full requirements and their final status.
- 
-\section{Testing Strategy}
-Their are many different methods that can be used to test software and to ensure the program operates correctly. This chapter describes the testing strategy employed in this project to achieve validation and verification of this web application.
-\\
-\\
-Validation of an application describes if the application does what the user wants. While verification describes if the the application matches its specification. In order to ensure that was the web application was thoroughly tested both white box and black box testing methodologies were used.
-\\
-\\
-The black box testing methodology focuses on checking if the functionality operates correctly i.e. Does the code take in an input and give the correct output. While white box testing methodology looks at the code internally in order to determine if the code operates correctly.
-\\
-\\
-The following testing strategies were used, unit testing, integration testing and acceptance testing.
-\subparagraph{Unit Testing}
-Unit testing involves testing individual components and objects which make up the system. Each object or component is an individual unit which needs no other objects in order to operate. For unit testing black box testing methodology was used. Black box testing is much less time intensive than white box testing and thus suited this fixed time scale project more appropriately.
-\\
-PHPUnit unit testing framework was used in order to automate the process and produce formal results for each individual unit. However PHPUnit works well when the the units being tested does not interact with outside units such as a database. For example the registration process in involves validating and inserting the user data into the database. While the validation components can be tested independently, manually testing is need to ensure that correct data is entered into the database. Since this project is primarily focused on manipulating the database thus this type of testing was only useful in a limited scope.
-%projects people can search.
-%project page has title, description, goals, looking for who, comment section, links of people profile currently in the team
-
-\subparagraph{Integration Testing}
-This type of testing was carried out when a new functionality was added. The unit tests for previously added functionality were run as well as the new functionality was tested manually using test data. Furthermore any previously added functionalities that did not have unit tests, were also manually in order to ensure previous functionality had not broken. This type of testing was quite time intensive and after consideration, a framework should have been chosen to automate this type of testing.
-
-\subparagraph{Alpha Testing}
-The alpha testing was carried out by a single student at Heriot-Watt University. The purpose of this testing was to put the web application under the stress of a normal user. Though the student was using the application normally, the student was asked to intentionally attempt to break functionality. By doing this, the testing would give a large coverage on the code base and unveil subtle bugs. This testing was very successful as it unveiled many critical bugs.
-\pagebreak
-\section{Questionnaires}
-As this project is user focused, it was important to keep the users of the system involved at all stages of development. The success of the project depends of on how effectively the users can use the web application. However ASCUS is large organisation with a large number of member, this meant that it was not possible to use interviews a form of feedback. Thus in order to get a large number of opinions quickly, questionnaires were used.
-
-Two questionnaires were used. The first questionnaire was used get information on what the user was interested in getting out of the web application. It was also used to asses parts of the initial prototype such as the search functionality. The second questionnaire was used at the end of development in order to get a final evaluation on the web application. This was directly focused on its usability and involved user completing common tasks using the web application and answering questions on how easy it was to complete the tasks.
-
-In order to ensure the quality of the the questionnaires they were piloted to set of subjects. The subjects were not part of ASCUS and could only verify that the questions asked covered the desired topics and were easy to understand.
-
-The results of questionnaires are discussed is in the testing and evaluation section, in the first and third iteration respectively.
 \chapter{First Iteration}
-This chapter explains process by which the first initial prototype was created. The first prototype created was a concept prototype i.e. their were no implementations of it. As this was the first iteration, it was mainly focused on gathering requirements and focusing on the user interface of the prototype.
+This chapter explains the process by which the first initial prototype was created. The first prototype created was a concept prototype i.e. their were no implementations of it. As this was the first iteration, it was mainly focused on gathering requirements and focusing on the user interface of the prototype.
 
 \section{Requirements}
 The requirements of the project were gathered by speaking to the client and then prioritised in order to manage the project effectively. The most important requirements were given the tag High. These requirements must have been completed before the end of the project. The next priority tag was the Medium tag, any priorities with the Medium tag must be started only after the High tag requirements have been finished. While the Medium tag priorities were not essential, it was recommended that at least some if not all of them should be implemented. Finally the least important requirements were given the tag Low. These requirements were not needed for the main functionality and only provided extra features for convenience.
@@ -244,14 +274,11 @@ This is has been identified as the most important requirement. The users shall b
 \subsubsection{Register and Log in} 
  User shall be able to register as member and customize their profile. To register the user must provide a first and last name as well choose a user name and password. Once the user has registered they can then customize their profile. The profile shall contain the following items:
  \begin{itemize}
- \item first and last name (Required)
- \item age (optional)
+ \item Name (Required)
  \item Phone/Mobile number (optional)
  \item Biography (optional)
  \item Artistic and/or Scientific interest (optional)
- \item Profile Picture (optional)
- \item Extra pictures - in order to demonstrate some previous work (optional)
- \item External Links - in order to show previous work done, such as blogs and journal articles (optional)
+ \item Profile Picture (optional) articles (optional)
  \end{itemize}
  The user name and password provided will be used to login, which will allow the members to edit their profile.
  	Members can only edit their own profiles.
@@ -260,7 +287,7 @@ This as been given a high priority as an application with high usability and con
 
 \subsection{Medium Priority}
 \subsection{Responsive Design}
-In order for the for the application to be successful it require not only that the application be usable but also accessible as well. The application should be optimized so it works correctly and is usable on a variety of browsers. The latest version of Google Chrome, Mozilla and Internet explorer should be supported. Furthermore the application should be usable on Desktop computers, tablets and mobiles. The Desktop resolutions that should be supported are 1366 x 766 and above. For tablet devices the Ipad and Samsung Galaxy tablet. For mobile devices the Iphone and Samsung Galaxy series. These devices were chosen as they represent a larger variety of devices as well as the most popular ones.
+In order for the for the application to be successful it require not only that the application be usable but also accessible as well. The application should be optimized so it works correctly and is usable on a variety of browsers. The latest version of Google Chrome, Mozilla and Internet explorer should be supported. Furthermore the application should be usable on Desktop computers, tablets and mobiles. The Desktop resolutions that should be supported are 1366 x 766 and above. For tablet devices the Ipad and Samsung Galaxy tablet. For mobile devices the Iphone and Samsung Galaxy series. These devices were chosen as they represent a large variety of devices as well as the most popular ones.
 
 \subsubsection{Map visualization}
 This feature allows users to visually see the location of members in a map. The map will show icons representing members on map. The dots will become bigger as more members are in a particular area. There should be a zoom functionality, as the user zooms in the more detailed density of the members becomes clear. This is likely to be the most difficult requirement and is likely to scoped down in order to be manageable with in the project deadlines.
@@ -269,14 +296,15 @@ This feature will allow members to create projects, that users can search for. T
 \subsection{Low Priority}
 \subsubsection{Forum}
 User will have the standard forum functionality available . Users will be able to create threads and post comments. Moderators maybe assigned with the chosen privileges. 
+\pagebreak
 \section{Design}
-The design of the system was split into three tiers. The first tier is the front end. This tier is concerned with user interface of the website and using client side scripting to enhance the experience. Prototype were used to help design the front end. The prototypes would show how the user interface would look and how the user would interact with it. 
+The design of the system was split into three tiers. The first tier was the front end. This tier is concerned with user interface of the website and using client side scripting to enhance the experience. Prototype were used to help design the front end. The prototypes would show how the user interface would look and how the user would interact with it. 
 
-The second tier is the middleware. This tier is the main bulk of the application and is concerned with taking in data and putting it into the back end. It is also concerned with taking data out of the back end and manipulating it for user consumption. 
+The second tier is the middleware. This tier was the main bulk of the application and was concerned with taking in data and putting it into the back end. It was also concerned with taking data out of the back end and manipulating it for user consumption. 
 
-The last tier is the back end. This tier is the database and is concerned with the architecture of the database. Designing the back end involves deciding what data should be stored and how it should be stored.
+The last tier was the back end. This tier was the database and was concerned with the architecture of the database. Designing the back end involved deciding what data should be stored and how it should be stored.
 \subsection{Front End}
-The requirements detailed the system to be highly usable, which meant it was important that the user interface was intuitive, simple and aesthetically pleasing. However as this was an initial prototype and low fidelity, this meant that the aim was of the first prototype was to focus on intuitiveness and simplicity.
+The requirements stated the system should be highly usable, which meant it was important that the user interface was intuitive, simple and aesthetically pleasing. However as this was an initial prototype and low fidelity, this meant that the aim of the first prototype was to focus on intuitiveness and simplicity.
 
 Though many prototyping applications were available, Lumzy was chosen because it offered all the important features and it was free. Though alternative would have been to use paper prototyping however it would have been much more difficult to maintain it and changes would require the prototype to be drawn again from scratch.
 
@@ -287,7 +315,7 @@ Though many prototyping applications were available, Lumzy was chosen because it
 \includegraphics[width=\textwidth,height=10cm]{People.jpg}
 \caption{Search Page}
 \end{figure}
-This interface design is above is for allowing users to search for collaborators. The search bars allow the users to search by area of work, location, by radius from a particular location, skills and interests.
+This interface design is for allowing users to search for collaborators. The search bars allow the users to search for members by area of work, location, by radius from a particular location, skills and interests.
 Once the search is completed, a grid of member information will appear. Each member that matched the search criteria will have their profile picture, name and first few words of their biography shown. The far right hand side shows popular areas in which members have claimed they have expertise in.
 
 \pagebreak
@@ -301,7 +329,7 @@ Once the search is completed, a grid of member information will appear. Each mem
 The figure above shows the interface design for the second main requirement, the profile page. This shows how the profile page will look after the user has entered his/her details.
 
 
-The profile contains useful information that other users are likely to be interested in. It includes location, small biography. Also specific part is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
+The profile contains useful information that other users are likely to be interested in. It includes location, small biography. Also specific part of the interface is dedicated to simply talk about artistic and scientific interests. This will allow for more freedom to say what interests the member regardless of occupation.
 
 On the bottom left it also shows the areas in which the member has claimed to be an expert. Expertise area coupled with the artistic/scientific interest should give the user enough information to judge if the registered member is appropriate for collaboration.
 \pagebreak
@@ -364,13 +392,13 @@ The initial database design stores login information as well as partial profile 
 
 Every member has many expertise and a single expertise can be shared by many members. Thus we have a many-to-many relationship between member and expertise areas. In order for the many-to-many relationship to be implemented it must require an intermediate table. The members\_area\_of\_expertise table will act as link between the member and their expertise. It will use a surrogate primary key as well as a unique composite key. The composite key will be the members\_id and the expertise\_id combined. This way each member has a unique link to an expertise.
 \section{Testing and Evaluation}
-At this stage it was sufficient to manually test the system as only minimal functionality had been implemented. In the case of the evaluation, informal meeting were carried out with the client where feedback was given on the prototype and functionality implemented and a questionnaire was sent out.
+At this stage it was sufficient to manually test the system as only minimal functionality had been implemented. In the case of the evaluation, informal meeting were carried out with the client where feedback was given on the prototype and functionality implemented.  A questionnaire was also sent out for feedback.
 
-Thorough the meetings was two main issue that was identified with the initial prototype. The profile page did not allow artists or scientist to display samples of their work. Samples of work would be an important indicator when searching for collaboration partners. It would be useful for artist to upload images of their work and scientist can give details of their research as well as links to the papers they have published.
+Thorough the meetings there were two main issue that were identified with the initial prototype. The profile page did not allow artists or scientists to display samples of their work. Samples of work would be an important indicator when searching for collaboration partners. It would be useful for artist to upload images of their work and scientist can give details of their research as well as links to the papers they have published.
 
-Another issue with the initial prototype was lack of result information provided by the search. In the prototype only an image of the member,their name and a few words of them selves are provided in the search results. This forces users to go onto the members profile page to get further details and it slows down the process of searching for the user.
+Another issue with the initial prototype was the lack of result information provided by the search. In the prototype only an image of the member,their name and a few words of them selves are provided in the search results. This forces users to go onto the members profile page to get further details and it slows down the process of searching for the user.
 
-Furthermore issues were identified with the registration functionality. In its current form it did not stop potential users or bots from creating many accounts and creating fake profiles. The solution was to only allow members to login once they had verified their email address. By doing this even it forces the users to put more effort into making an account as they would have to provide a legitimate email address.
+Furthermore issues were identified with the registration functionality. In its current form it did not stop potential users or bots from creating many accounts and creating fake profiles. The solution was to only allow members to login once they had verified their email address. By doing this it forces the users to put more effort into making an account as they would have to provide a legitimate email address.
 
 The questionnaire was used to evaluate and understand the two most important pages of the web application, the profile and the search page. The figures below highlight the results for three questions in the questionnaire.
 
@@ -400,10 +428,9 @@ This chapter describes the development of the project in the second iteration. T
 \section{Requirements}
 The requirements did not change from the previous iteration, as through informal meetings it was decided the requirements were sensible for the time available for this project.
 \section{Design}
-This section details the expansion of prototype from a concept prototype to a work in progress web application. This section also details how the user interface was improved based on the feedback in the previous iteration as well as what extra functionality was implemented.
-\subsection{Front End}
+This section details the expansion of the prototype from a concept prototype to a work in progress prototype. This section also details how the user interface was improved based on the feedback in the previous iteration as well as what extra functionality was implemented.
 \pagebreak
-
+\subsection{Front End}
 \subsubsection{Responsive Design}
 Responsive design refers to a design of a website or web application which provides the same viewing experience across a wide range of devices. The primary feature of responsive design is the flexibility of the layout. The layout can increase in size on a larger screen as well as shrink and fit optimally on a smaller screen.
 
@@ -469,6 +496,8 @@ This page allows the members to add work samples. It performs basic front end va
 \caption{Registration Page}
 \end{figure}
 
+
+\subsubsection{Registration Page}
 The is page is a standard registration page, which allows the user to become a member. Originally the registration page was to be kept as simple as possible. This was done with the thought, that users are likely to sign up if signing up is very quick and did not require any significant information. However simplicity and quick registration were in contention with the email verification feature discussed in the previous iteration's feedback. In order to implement email verification the registration required a valid email address from the users. This slowed down the registration process as users needed to enter an extra field of information and more importantly forced the user to give their email address. For many users having to provide their email address may turn the away from the web application however it was decided this was an acceptable risk.
 \pagebreak
 \subsubsection{Front End Validation}
@@ -520,21 +549,21 @@ In order to implement this feature a library called PHPMailer was used. PHPMaile
 In order to link the activation of a particular email address to a particular user, a unique identifier was added to the link. When the user clicks the link the unique identifier is passed through the url to the confirmation page. The confirmation page then updates the database and redirects the user to the home page and shows an appropriate message, which signals the email has been verified.
 
 \subsubsection{Edit Profile}
-The edit profile functionality was implemented using variety of classes. The majority of information is stored in the members table and thus the Member class is used for that purpose. The Member class provides an edit member function which adds the name,profession, collaboration availability, city, country, bio and link to the personal site to the Members table. The addition of experience, interest and skills is handled by the Experience, Interest and Expertise class respectively. Internally these classes do not overwrite the old data entered, they simply add to their respective tables using the ``REPLACE INTO" query.
+The edit profile functionality was implemented using variety of classes. The majority of information is stored in the members table and thus the Member class is used for that purpose. The Member class provides an edit member function which adds the name,profession, collaboration availability, city, country, bio and link to the personal site to the Members table. The addition of experience, interest and skills is handled by the Experience, Interest class respectively.However in order to link the the member to their expertise data must entered in an intermediate table. Inserting data into the intermediate table is handled by the MemberExpertise class.
 
-Edit profile page fields are filled in with the information that is already stored in the database. However database has to be updated based on the changes made in the fronted but in order to do this, the difference between what is in the database and what has been given by the user has to be calculated. 
+Edit profile page fields are filled in with the information that is already stored in the database from the previous insertion. However database has to be updated based on the changes made in the fronted.
 \pagebreak
 
-An example of this would be a member had an interest "illusion" and deleted and added a new interest "drawing". This change of deletion of old values and insertion of new values has to reflected in the database.
+An example of this would be a member had an interest "illusion" and deleted it and added a new interest "drawing". This change of deletion of old values and insertion of new values has to reflected in the database.
 
-This problem has two solutions, either calculate the difference, if their is a difference the apply the difference, this may mean deleting some elements and inserting new elements at the same time. The other solutions is to simply delete all old data and then insert the new data. The latter of the two choices was chosen, even though conceptually the latter decision may be inefficient, its simpler to implement. For the small amount of values entered their is no significant performance difference.
+This problem has two solutions, either calculate the difference, if their is a difference then apply the difference, this may mean deleting some elements and inserting new elements at the same time. The other solutions is to simply delete all old data and then insert the new data. The latter of the two choices was chosen, even though conceptually the latter decision may be inefficient, its simpler to implement. For the small amount of values that are being dealt with on the page, there is no significant performance difference.
 \pagebreak
 \subsection{Back End}
 Several changes were made to the back end database in order to implement the new functionality. Interest, Experiences,Work\_Samples tables were added to hold information on interests, experiences and work samples added by the members.
 
 The Email, Confirmation\_Key and Status fields were added to the members table in order to implement the email verification functionality. The Confirmation\_Key field would hold the unique identifier sent to the user. The Status field was used to hold 0 for if the email had not been verified and 1 if it had.
 
-It should be pointed out that the link between expertise and members uses an intermediary table while the interests,experiences does not. It is an oversight in the design of the database and premature optimization, as the members were expected to share many expertise however it was felt members were unlikely to share interests or experiences. The correct decision would have to been to make it a 1 to many relation as this would have simplified the interaction with relation through the middleware. Overall it is minor oversight and fixing it is of low priority.
+It should be pointed out that the link between expertise and members uses an intermediary table while the interests,experiences does not. It is an oversight in the design of the database and premature optimization, as the members were expected to share many expertise however it was felt members were unlikely to share interests or experiences. The correct decision would have to been to make it a 1 to many relation as this would have simplified the interaction with relation through the middleware. Overall it is minor oversight and fixing it is of low priority. See Figure 6.8 for design of the database in the second iteration.
 \pagebreak			
 \begin{figure}[!ht]
 \centering
@@ -578,11 +607,14 @@ The following table shows the result of the manual testing.
 \chapter{Third Iteration}
 This chapter describes the development of the final release. This release builds on the feedback received from the previous iteration. Any changes after this iteration will only consist of bug fixes and no new features will be added.
 \section{Design}
-During the final design stages of the application there were many changes made in order to make it suitable as a final release.  The middleware and back end development involved adding the search functionality, allowing artists to add work samples to their profiles and allow both artists and scientists to upload a profile pictures.
+During the final design stages of the application there were many changes made in order to make it suitable as a final release. The major changes made were aesthetic changes to the user interface and adding a search functionality.
+The middleware and back end development involved adding the search functionality, allowing artists to add work samples to their profiles and allow both artists and scientists to upload a profile pictures.
 \subsection{Front End}
 This section will explain developed in the front end tier during this iteration. The front end development involved designing the finished user interface and increasing the usability by adding simple features such as helpful error messages. It also involved ensuring that the application was responsive and displayed correctly on the specified devices.
+For the full appearance of the user interface in the third iteration, see the appendix A.2.
+\pagebreak
 \subsubsection{Responsive Design}
-Responsive design was achieved using functionality provided by the bootstrap framework. The most important css classes were ``col-md" and col-sm". The col-md class works for medium sized devices such as computer screens and sm works for small devices such as tablets and some mobile phones. By using these classes, the layout was split into flexible columns – resizing when the screen size changed. See the appendix for images of the user interface on different screen sizes. It should be noted even though Bootstraps documentation states the col-xs class should be used for mobile devices, in the case of this project it sufficed to use the col-sm classes. Thus there is no guarantee that the web application will look appropriate on other devices which are not stated in the requirements.
+Responsive design was achieved using functionality provided by the bootstrap framework. The most important css classes were ``col-md" and ``col-sm". The col-md class works for medium sized devices such as computer screens and sm works for small devices such as tablets and some mobile phones. By using these classes, the layout was split into flexible columns – resizing when the screen size changed. It should be noted even though Bootstraps documentation states the col-xs class should be used for mobile devices, in the case of this project it sufficed to use the col-sm classes. Thus there is no guarantee that the web application will look appropriate on other devices which are not stated in the requirements.
 
 \subsubsection{Work Type - Edit profile}
 In the previous iterations feedback, many users asked for the ability to add particular type of work they are willing to do. The conclusion was to include three types of options volunteer work, paid work and no collaboration. In this case collaboration work comes under volunteer work. While collaboration work implies working as peers Volunteer does not and covers a larger domain. The following figure shows the user interface for the options.
@@ -592,81 +624,341 @@ In the previous iterations feedback, many users asked for the ability to add par
 \includegraphics[width=\textwidth,height=3cm]{third-iteration-collaboration-availability.png}
 \caption{Second Iteration ER Diagram}
 \end{figure}
+\pagebreak
+\subsubsection{Tags}
+Tags are short keyword(s) that succinctly describe an item. Tags also allow the item to be found again using the tags attached to it. Within this application tags are used to describe a users skills and interests. In order to implement tag like functionality and aesthetics, a jquery library called tagit was used. This library creates an input where the user can enter tags. It comes with many usability features such as deletion using backspace as well as auto complete feature. Figure 7.2 shows the appearance of the tags.
 
-Checkboxes are used so multiple options can be chosen at once.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=5cm,height=5cm]{third-iteration-tags.png}
+\caption{Skills and Interest Tags}
+\end{figure}
+
+The auto complete feature was used heavily, in order to aid usability. Its main purpose was to help user when searching for skills and interests. The auto complete takes into account all skills and interests in the database thus giving the user information on what members have already used. This should help the user tailor their search. However auto complete works of the spelling and not the semantics of the word thus its usefulness is limited.
+\pagebreak
+\subsubsection{Artist Work Samples}
+In this iteration slight changes were made to the add work sample page to allow artists to upload images of their work. The user interface is mostly the same as in the previous iteration other than the artist is able to added an image. Their is added validation to ensure that the images uploaded a below 1MB and have the file type jpeg,png or gif. The file size limit is stop users from uploaded extermely large high resolution photos and share the available server space fairly. Furthermore by ensuring the file type of the specified value, it ensures their is not dangerous files such as scripts can be uploaded and run. The figure below shows the interface for adding a work sample.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{third-iteration-add-worksample-artist.png}
+\caption{Add Work Sample Page}
+\end{figure}
+It should be noted that the add work sample for scientist and artist differs in that the artist able to add images when the scientist is not. This also reflects the show work sample page used for managing the work samples.
+\\
+\\
+Changes were also made to the profile page to show the artists work samples. In order to display the images an image displaying library called Galleria was used. Galleria allows users to quickly display images by specifying the images in html and then passing the container of the images to the library. It requires a very small amount of code use as it is aimed at non programming users. However it is very difficult to customize and only one theme is available for free.
+
+The display consists of a carousel of images and small thumbnails. Each image contains a small icon, which the user can click to get the title and the description of the image as provided by the artist. Figure 7.4 shows the user interface for the work sample on the artist profile page. For the full user interface for the profile page, refer to the appendix A.2.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{third-iteration-profile-worksample.png}
+\caption{Work sample section on the profile page}
+\end{figure}
+\pagebreak
 \subsection{Middleware}
-\subsection{Back End}
-\section{Testing and Evaluation}
+In the final iteration there were two major functionalities developed in the middle tier, they were the search functionality and adding work sample for artists. A further minor functionality was implemented to handle the work types proposed in the feedback of the previous iterations.
 
-\chapter{Risks Assessment}
- 	This section will give an an overview of the potential risks to project development.
+\subsubsection{Search}
+The search functionality allows the user to search by a members profession, city they are in, skills and interests. One of the problems when searching through a self tagging system is everyone describes themselves using a variety of words. This is not as significant problem with expertise as it is with interests. It is difficult for the user to search for a member because they must use the exact same words as the members used to for their skills and interests. 
+
+A solution to this problem is to create an ontology for skills and interests. However that in its self is large project and out with the scope of this project. Instead the WordNet database was used to solve this problem. WordNet is a large database containing information on words as well as links between words. In order to interact with the tables within WordNet a WordManager class was created. It abstracts over the tables within WordNet and provides functionality to get all words linked to a particular word or just synonyms of a word.
+
+The Search functions as follows:
+\begin{enumerate}
+  \item List of members is created based on the profession, if no profession is provided then the list contains all members. This list is called the \textit{final members}.
+  \item The list is then narrowed by the city given, if no city is give this step is skipped
+  \item A list of words is created based of the skills and interest given as input. Using the WordManager class, similar words for every word in the input are added to the list, including the originally searched words. This list is called the \textit{similar words}.
+  \item A list of members that have skills or interests that match any within the \textit{similar words} list is created. This list is called the \textit{temporary members}.
+  \item All members that are in the \textit{final members} list but not in the  \textit{temporary members} list are removed from the \textit{final members} list. They are removed because they matched the first two criterion of profession and city but do not have any skills or interests that are specified in the input or any skills or interests that are similar to the input skills and interests.
+  \item The \textit{final members} list now contains all the matching members. Their details are then displayed.
+\end{enumerate}
+
+There are several performance issues that should be noted. Due do the user interface changes that combined input fields of the skills and the interests, there is no way to distinguish if the word given in the input is a skill or an interest. This means that each word must be searched within the skills table and the interest table. This means it takes twice as long to search compared to if the skills and interests had separate input fields. The problem is further exacerbated by the results of the similar word search returning up to 30 to 40 extra words per input word. After some performance analysis the delays are not considerable enough to stop using WordNet.
+
+Lastly it should be noted that the usefulness of the WordNet is significantly less than a special ontology created specifically for this project. WordNet is a general database for words thus many words that are returned for a similar word search are not related to skills or interests.
+\subsubsection{Add Work Sample}
+In order to implement the add work sample functionality for artists only minor changes where needed for the WorkSample class that was created in the previous iteration. The majority of the time was spent on validating the images uploaded. A small PHP image handling library was used to validate the images. On every image uploaded the file size was constrained to 1MB maximum by lowering the resolution. Furthermore the uploaded image was check to ensure it had the file type jpeg,png, or gif. By carrying out these validations it ensured that no dangerous scripts can uploaded and the server space usage was kept to a minimum. 
+
+\subsubsection{Work Type}
+The CollaborationTypes class and MemberCollaborationTypes was created to handle working with the new work type functionality. CollaborationTypes provides the abstraction of insertion new work types. The MemberCollaborationTypes is required to insert data in the intermediate table that links members to their work types.
+
+\subsection{Back End}
+There were two changes made to the back end database of the application. These change involved the combining the WordNet database with the applications database and adding new tables to facilitate the new work type functionality. See Appendix 3 for the ER diagram for the final database design.
+
+\subsubsection{Adding WordNet}
+Combining the WordNet database and the application database was as simple task. 
+However their were some performance issues when using the WordNet tables. This was primarly an issue when searching for synonyms for a word. In most cases searching for synonyms of a word would take approximately 2.0 seconds. This is extermely costly as there is likely to 3 3 to 5 words per search. 
+
+The performance issues are likely due to two reasons. Firstly WordNet is a very large table with upwards for 14000 records in some tables. Secondly it is not optimized for specifically searching for linked words. Even though there are indexes added to columns, this not enough of an optimization.
+
+Searching for synonyms did provide good results in some cases. An example of this can be seen when searching for synonyms for designer, the results provides the following words: fashion designer, web designer, graphic designer.
+
+The trade off is between long search times with the potential of having good results or short search times. The time delays were simply too long for an interactive application thus the searching for synonyms was not made part of search functionality.
+
+\subsubsection{Adding Work Type Tables}
+Two tables were added to hold the work types and link the work types. The Collaboration Types table would hold the work types and the MemberCollaborationTypes would link the members to their work types. 
+
+\pagebreak
+\section{Testing and Evaluation}
+\subsection{Testing}
+To test the system all previous unit tests were to ensure that the new functionality implemented did not break previous implemented features. 	All new features were also manually tested to ensure they worked correctly.
+
+To test the search functionality multiple user profiles were created. They were filled with a variety of data. The search was then manually executed and the n compared with the expected results. This testing discovered some issues with the search functionality when searching by skills and interests. In many cases the search would return no matches when in fact there were. This was later discovered to be a defect in the number of columns returned when finding the matched members. This lead to a comparison of lists - as described in the middleware search section- to be faulty. This problem was easily and quickly fixed.
+
+To test the responsive design of the website the screenfly website was used. This website allowed the user to input a url of website and then look at the user interface on a variety of screen sizes including tablets and mobiles.  Using the screenfly the user interface was tested on all the specified devices in the requirements. On most devices the website looked optimal. However on mobile devices and extremely large desktop screen sizes the user interface was slightly less pleasing but not enough to warrant specific fixes for these devices.
+
+In addition to the testing carried out by the author, alpha testing was also carried out. This involved an additional user who was asked to carry out testing on the application. The user was asked to carry out the most expected uses first and then systematically look for bugs. This type of testing was successful as two bugs were found. The first bug related to adding work samples, where the file extension included capital letters. The application would store file extension as it was given however the server would change the file extension to lower case. This meant that the application would try to display the work sample by looking for a file with the wrong name. In order to avoid this the work sample file name was changed to all lower case characters before storing the file name in the database.
+
+Another bug found related to the display of the work types on the profile page. By using a using combination of work types would not be display on the profile page.
+
+By the end of the third iteration all bugs that were found were fixed.
+
+\pagebreak
+\subsection{Evaluation}
+In this iteration a formal evaluation of the application was carried out. A questionnaire was used to get feedback on the usability of the application as whole, the usability of specific features and its fitness for purpose.
+
+The most important functionality of the application was the search functionality. The result of the evaluation showed that the functionality was usable and served its purpose. 75\% of users strongly agreed that the search was ease to use while 25\% only agreed. Furthermore 75\% of users agreed that the search returned useful information while only 25\% strongly agreed. Finally the 50\% of users strongly agreed that the search took reasonable amount of time, while 25\% agreed and 25\% remained neutral. 
+
+The results show that the search functionality was successfully implemented. The search was usable and the issues of not enough information being returned from a search, that were identified in the previous iterations have been fixed.
+
+Another important functionality of the application was the edit profile page and profile page. 75\% of users strongly and 25\% agreed, that the edit profile page allowed users to enter information that would be important for other users to know. Furthermore 100\% of users strongly agreed that the edit page was easy to use. Lastly 75\% strongly agreed and 25\% were neutral on the statement that the profile page was was clearly laid out. These results further show that the usability aspect of the requirements has been met.
+
+Lastly the in order to evaluate the fitness for purpose of the application the users, were asked, the website overall is useful for finding collaboration partners. 50\% of users strongly agreed and 50\% of users agreed. This shows that from users perspective the web application was fit for purpose.
+
+The result of the evaluation was positive and show that from a users perspective that application was successfully implemented. However in the questionnaire there were improvements suggested. One user suggested the ability to add projects as well as being able to advertise it. This is quite a large feature has been left out for further work. Another user suggested the ability for members to add what their level of expertise was. This potentially seems like a good feature but as discussed in the literature review it has many problems. One of them mainly being users generally overvaluing their skills. Another reason being, it is difficult to find an appropriate scale for which to represent different skill levels.
+
+\chapter{Project Evaluation}
+This section evaluate the project as a whole and discusses the evaluations carried out during the development process.
+\section{Requirements Fulfilment}
+During the first iteration the basic requirements were identified and the foundations of the project were built using a concept prototype. The requirements can be used in order to evaluate how fit for purpose the application was. For a full list of requirements and their final status see the appendix A.1. 
+
+The requirements that were not met consisted of one low priority requirement and two medium priority requirements. The low priority requirements were not needed for the main functionality and only provided extra features for convenience. The two medium requirements were map visualization and projects. Both of these requirements were large and would take significant time to implement. However due to limited time available a trade of had to me made between adding more functionality or increasing the usability of the application. The decision was made to focus on usability and the user interface to provide a small but a complete application.
+
+Due to the focus on usability, the medium priority responsive design requirement was achieved. This allowed for usable application on multiple devices. Responsive design is particularly important feature should the application acquire a large user base. This due the technology age where large portions users like use application while on the move through their tablet or mobile device.
+\pagebreak
+All high priority requirements had been achieved thus the application should have the require functionality and usability to help find collaboration partners.
+
+\section{User Evaluation}
+Throughout the development process, feedback was received on the features and the user interface being implemented. The feedback was invaluable in making the application fit the users need. The evaluation was carried out using informal meetings and formal questionnaires.
+
+Informal meetings were arranged in order to discuss the user interface with the users. These were useful throughout the development process. During the first iteration they were used to elicit the requirements as well as get feedback on the concept prototype.	 This allowed the project to start of if with a strong foundation on which it was built upon in the later iterations.
+
+During the second iteration a work in progress prototype was created. This prototype contained some of the major functionality. The informal meetings were used to gain feedback on the features implemented.  This also gave a chance for the users to actually sit down and use the functionality.
+
+During the third iteration and the final release of the application informal meetings were used to evaluate if the application was fit for purpose. During these meetings the users were also able to give ideas for further work.
+
+Questionnaires were also used in order to gain feedback. This was done due to ASCUS being a large organisation and in order to get a large coverage of user opinion questionnaire were used.
+
+During the first iteration a questionnaire was used for two purposes. The first purpose was to get information on what the user was interested in getting out of the web application. The second purpose was feedback on parts of the initial prototype such as the search functionality. This was successful as the questionnaires gave invaluable feedback, which were used to shape the prototype in the second iteration.
+
+The questionnaire was also used in the third iteration, final release of the application. It was used as a final evaluation on the web application. This questionnaire was directly focused on the usability of the application and its fitness for purpose. It involved users completing common tasks using the web application and answering questions on how easy it was to complete the tasks.
+
+The results of the second questionnaire showed that the application had met its aims. Majority of responses said the application was easy to use and was fit for purpose.
+
+\chapter{Conclusion}
+\section{Achievements}
+The main aim of this project was to provide ASCUS members with an application that would allow them to find collaboration partners and opportunities. The results of informal meetings and questionnaires showed that application had met most of its aims. The application was easy to use, aesthetically pleasing and provided functionality allowing users to find collaboration partners.
+
+However the aim of allowing users to find collaboration opportunities was the not met. This was due to the short time scale of the project and the decision was made to trade off functionality for more usability. This was also due to lack of experience I had in developing user interfaces, which led me to spend more time on them. 
+
+The use iterative development methodology was a success as it helped by keeping the applications focus on what the users needed and wanted. Further more by using iterative development even though not all requirements were met, the users have still obtained the application that provides the most important functionalities.
+
+From a personal development perspective, this project was invaluable in giving me experience in software engineering. I was able to gain experience in many new technologies as well as the whole software development cycle.
+
+Overall, the project was a success as it achieved many of its aims as well as providing a valuable experience.
+
+
+\section{Future Work}
+Although an application was developed that satisfied the main aims of the project and most of the requirements, there is still scope for improvements and additional features. This section will highlight the must	important areas that can be improved and the most important features that can be added.
+
+\subsection{Project Support}
+An important requirement that was not part of the application was the ability for users to add projects. The users would be able to add information on project the would like collaborators for. Users can also add what type of members they are looking for help i.e. scientist or artist or both. Furthermore users should be able to tag the projects similar to how the skills and interests are done. The tags can relate to describe what the project is about and what skills are required. This would complement a search functionality for projects. Users should be able to search for the project by either what the type of profession, skill tags or description tags. By adding this feature the users would not be able to search for potential collaborators but also help those looking for collaboration projects.
+
+\subsection{Networking - Map visualisation}
+As noted in the literature review and questionnaires many people find expertise through word of mouth. The application should provide some sort of functionality to allow users to network. One way to do this is to add a friends mechanism. Where members can become friends with each and thus are able to suggest other members as potential collaborations. Furthermore some sort of map of that shows a persons friends and their friends so on. This would allow users to see connections between people and allow them to network themselves.
+\subsection{Events}
+Many artist and scientist attend events to look for collaboration, to show off their work and to network. By having a section where users can add events, this would allow events to get exposure to the whole of ASCUS organisation.
+
+\subsection{Improved Search functionality}
+Currently the search functionality is very basic, even though the WordNet database is used to improve the search it still leaves a lot to be desired. An improved database should be created which is specifically aimed at recording similar words in the area of skills and interests. This should be specifically be aimed at artists and scientists. This would improve the search greatly as compared to WordNet because it would be aimed a artists and scientists and would not be general word database. It should also be specifically designed to be efficient for search for similar words.
+\subsection{Forum}
+The application should provide a forum to allow artists and scientists to discuss ideas and potential projects. However it should be aesthetically pleasing and have high usability. 
+\printbibliography
+
+\begin{appendices}
+\chapter{Appendix}
+
+\section{Final Requirements}
+This section details the requirements at the end of the project and their final status.
 \begin{center}
 	\begin{table}[!ht]
-    \begin{tabular}[ht]{| l | l | l | p{5cm} |}
+    \begin{tabular}[ht]{| p{5cm} | p{5cm} | l | l |}
     \hline
-    Risk & Probability & Severity & Mitigation Strategy \\ 
+    Name & Description & Priority & Final Status\\ 
     \hline
-    Browser compatibility issues & High & Moderate & Constantly test browser compatibility through out the development cycle. Leverage automatic test frameworks in order to supplement manual testing.\\ \hline
-    Fall behind on plan & Moderate & Moderate & Give small leeway time for each part of the application. If significantly behind schedule then only complete vital parts of the application.  \\ \hline
-    Person of interest is unavailable & Moderate & Moderate &  Another client is kept up to date with the main development of the application.\\ 
-    \hline
-Users find the system unusable & Moderate & High & Follow user centred design approach. Maintain regular meetings with the client. User testing must be carried out extensively and feedback should be integrated into the next iteration. \\ 
-    \hline
-    Low quality feedback & Low & Moderate & Pilot all methods used to gain user feedback. If low quality feedback is given reassess previous methods for weaknesses and integrated any finding. \\ 
-    \hline
-    
+  Search for Collaborators & Ability to search for members based of a criteria & High &  Completed \\
+	\hline
+	Register and Log in & The user must be able to create an account and login & High & Completed \\
+	\hline
+	High Usability & The application must be user friendly and intuitive to use & High & Completed 	     \\
+	\hline
+	Responsive Design & The application user interface must work well on multiple devices including tablets and mobiles & Medium & Completed 	     \\
+	\hline
+	Map Visualisation Design & Visually show member locations on map. The map must be intuitive to use and aesthetically pleasing & Medium & Not Completed 	     \\
+	\hline
+	
+	Projects & Allow the user to create projects pages. These pages will contain information about the project and who is needed for it. The projects must be searchable as well. & Medium & Not Completed 	     \\
+	\hline
+	
+		Forum & Add forum standard forum functionality & Low & Not Completed 	     \\
+	\hline
+	
     \end{tabular}
-    \caption{Risk Assessment}
+    \caption{Final Requirements}
 \label{tab:xyz}
     \end{table}
     \end{center}
+    
+\section{Final User Interface}
+This section displays the full user interface at final release. 
+\subsection{Home Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-homepage.png}
+\caption{Home Page}
+\end{figure}
+
+\subsection{Registration Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-registration-page.png}
+\caption{Registration Page}
+\end{figure}
+
+\subsection{Login Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-login-page.png}
+\caption{Login Page}
+\end{figure}
 
 
-\chapter{Project Plan}
-A high level plan below describes the key tasks to be achieved.
-\begin{center}
-	\begin{table}[!ht]
-    \begin{tabular}[ht]{| l | l | p{11cm} |}
-    \hline
-    Due Date & Version & Task \\ 
-    \hline
-    15/10/2013 & R1 & Gather initial requirements.\\ 
-    \hline
-    01/11/2013 & N/A & Conduct Literature review and research into relevant 												  technologies \\ 
-    \hline
-    22/11/2013 & Final & Hand in final version of the first deliverable \\ 
-    \hline
-    03/12/2013 & R2 & Create Questionnaire to gather further requirements. Pilot the 										questionnaire and improve it if needed.\\ 
-    \hline
-    31/12/2013 & WD1 & Create Website design prototype.\\
-    \hline
-    31/12/2013 & DD1 & Create initial database design and implementation.\\
-    \hline
-    31/12/2013 & IMP1 & Create an initial implementation of high priority requirements\\
-    \hline
-    10/01/2014 & N/A & Gather feedback on initial prototype and implementations. Improve 	                  				   the current system according to feedback.\\
-    \hline
-     17/01/2014 & WD2 & Create website design prototype for high and medium priority 										  requirements.\\
-    \hline
-    27/01/2014 & DD2 & Update database design in order to facilitate high and medium 		 								 priorities.\\
-    \hline
-    07/02/2014 & IMP2 & Implement medium priority requirements and integrate with previous requirements.		\\
-    \hline
-    17/02/2014 & N/A & Gather feedback and improve system based on feedback.\\
-    \hline
-    27/02/2014 & Final & Create final website design prototype for high,medium and low priority 			 			 requirements.\\
-    \hline
-    07/03/2014 & Final & Final update to database design in order to facilitate high,medium and low		 		             priorities.\\
-    \hline
-    17/03/2014 & Final & Implement low priority requirements and integrate with previous requirements.\\
-    \hline
-    01/04/2014 & Final & Test the systems, fix any bugs and release the system.\\
-    \hline
-    \end{tabular}
-    \caption{Project Plan}
-\label{tab:test}
-    \end{table}
-    \end{center}
+\subsection{Search Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-search-page.png}
+\caption{Search Page}
+\end{figure}
 
-\printbibliography
+\pagebreak
+\subsection{Artist - Profile Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-artist-profile-page.png}
+\caption{Aritst Profile Page}
+\end{figure}
+
+\subsection{Scientist - Profile Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-scientist-profile-page.png}
+\caption{Scientist Profile Page}
+\end{figure}
+
+\subsection{Edit Profile Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-edit-profile-page.png}
+\caption{Edit Profile Page}
+\end{figure}
+
+\pagebreak
+\subsection{Artist - Show Work Sample Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-artist-show-work-sample-page.png}
+\caption{Artist Show Work Sample Page}
+\end{figure}
+
+
+\subsection{Artist - Add Work Sample Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-artist-add-work-sample-page.png}
+\caption{Artist Add Work Sample Page}
+\end{figure}
+
+\pagebreak
+\subsection{Scientist - Show Work Sample Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-full-scientist-show-work-sample-page.png}
+\caption{Scientist Show Work Sample Page}
+\end{figure}
+
+
+\subsection{Scientist - Add Work Sample Page}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=12cm,keepaspectratio]{appendix/third-iteration-scientist-add-work-sample-page.png}
+\caption{Scientist Add Work Sample Page}
+\end{figure}
+\pagebreak
+
+\section{Final Database ER Diagram}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=18cm,height=16cm]{appendix/final-ER-Diagram.jpg}
+\caption{Final ER Diagram}
+\end{figure}
+\pagebreak
+
+\subsection{First Iteration - Questionnaire Consent Form}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=16cm,height=10cm]{appendix/first-iteration-questionnaire-consent-form.png}
+\caption{First Iteration Questionnaire}
+\end{figure}
+
+\pagebreak
+\section{First Iteration - Questionnaire}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=16cm,height=22cm]{appendix/first-iteration-questionnaire.png}
+\caption{First Iteration Questionnaire}
+\end{figure}
+
+\pagebreak
+\subsection{Third Iteration - Questionnaire Consent Form}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=17cm,height=10cm]{appendix/second-iteration-questionnaire-consent-form.png}
+\caption{Third Iteration Questionnaire Consent Form}
+\end{figure}
+
+\pagebreak
+
+\section{Third Iteration - Questionnaire Part 1}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=16cm,height=22cm]{appendix/second-iteration-questionnaire-1.png}
+\caption{Third Iteration Questionnaire Part 1}
+\end{figure}
+
+\pagebreak
+
+\section{Third Iteration - Questionnaire Part 2}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=14cm,height=22cm]{appendix/second-iteration-questionnaire-2.png}
+\caption{Third Iteration Questionnaire Part 2}
+\end{figure}
+
+\pagebreak
+
+\end{appendices}
+
 \end{document}
